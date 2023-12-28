@@ -21,6 +21,6 @@ You can perform the following actions:
     }
 }
 
-Your response must be formated as above.
+Your response must be formatted as above.
 
 Please provide the required JSON data for the specific action you want to take. Do not include any other sentences in your response.

@@ -1,10 +1,10 @@
-name,day1
-id,1
-income,1110
-expense,166
-num_of_customer,50
-num_of_chef,1
-chef_salary,2000
-dish_score,0.5080952380952382
-customer_score,6.04
-dishes,"{'Coq au Vin': 27, 'Ratatouille': 41, 'Tarte Tatin': 22, 'Bouillabaisse': 9, 'Chateauneuf du Pape': 6}"
+name,day1,day2,day3,day4,day5
+id,1,2,3,4,5
+income,15,0,19,0,0
+expense,166,166,166,166,166
+num_of_customer,1,0,1,0,0
+num_of_chef,1,1,1,1,1
+chef_salary,2000,2000,2000,2000,2000
+dish_score,0.3573809523809524,0.38452380952380955,0.39058956916099774,0.40257936507936504,0.405926569345687
+customer_score,4.0,4.0,4.0,4.0,4.0
+dishes,"{""Vegan Burger"": 1, ""Caesar Salad"": 1}",{},"{""Vegan Burger"": 1, ""Caesar Salad"": 1}",{},{}

@@ -103,6 +103,7 @@ class Scene(Configurable):
         Main function, automatically assemble input and parse output to run the scene
         """
         # data can from previous scene or previous process
+        
         data = previous_scene_data
         while not self.is_terminal():
             data = self.step(data)

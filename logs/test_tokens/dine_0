@@ -1,69 +1,298 @@
-[System->Alice]: The Restaurant " Le Petit Gourmet "information as below:
+[System->Bob]: The Restaurant " The Yummy Yard "information as below:
 1. Customer Score: NULL
 2. Advertisement
-   Experience the authentic taste of French cuisine at Le Petit Gourmet. Our top-notch Chef Pierre uses only the finest ingredients to create classic dishes like Coq au Vin, Bouillabaisse, and Ratatouille. Enjoy a glass of Chateauneuf du Pape and finish your meal with our delicious Tarte Tatin. Join us for a unique dining experience.
+   Welcome to The Yummy Yard! Dive into our delicious menu featuring classic cheeseburgers, vegan-friendly options, and mouthwatering desserts! Join us for an unforgettable dining experience with excellent customer service!
 3. Menu 
-   [{'name': 'Coq au Vin', 'price': 30, 'description': 'Classic French stew in which chicken is braised slowly in red wine and a little brandy to yield a supremely rich sauce.'}, {'name': 'Bouillabaisse', 'price': 35, 'description': 'A traditional Provençal fish stew originating from the port city of Marseille.'}, {'name': 'Ratatouille', 'price': 25, 'description': 'A stewed vegetable dish, originating from Nice, with tomatoes, eggplant, zucchini, bell pepper, onion, and garlic.'}, {'name': 'Tarte Tatin', 'price': 20, 'description': 'An upside-down pastry in which the fruit (usually apples) are caramelized in butter and sugar before the tart is baked.'}, {'name': 'Chateauneuf du Pape', 'price': 50, 'description': 'A full-bodied red wine from the Rhône wine region in southeastern France.'}]
+   [{'name': 'Classic Cheeseburger', 'price': 12, 'description': 'Juicy beef patty with cheddar cheese, lettuce, and tomatoes'}, {'name': 'Vegan Burger', 'price': 14, 'description': 'Delicious plant-based patty with vegan cheese and fresh vegetables'}, {'name': 'BBQ Chicken Wings', 'price': 10, 'description': 'Crispy chicken wings coated in our signature BBQ sauce'}, {'name': 'Caesar Salad', 'price': 8, 'description': 'Classic Caesar salad with fresh lettuce, Parmesan, croutons, and creamy dressing'}, {'name': 'Chocolate Sundae', 'price': 6, 'description': 'Rich chocolate ice cream topped with whipped cream and a cherry'}]
 4. Comments
    []
 
 Please note that comments are merely expressions of personal opinions and are for reference only. Comments can also be time-sensitive. So, a negative comment of a restaurant does not mean it's not suitable for you. If you are drawn to its menu and advertisements, don't hesitate to give it a try.
 
-[System->Alice]: The Restaurant " Le Petit Bistro "information as below:
+[System->Bob]: The Restaurant " Lin's American Grille "information as below:
 1. Customer Score: NULL
 2. Advertisement
-   Experience the authentic taste of French cuisine at Le Petit Bistro. Our carefully curated menu, prepared by Chef Antoine, showcases the best of French cooking. Join us for a gastronomic journey filled with flavors and aromas that will transport you straight to France.
+   Welcome to Lin's American Grille! Experience our modern take on traditional American cuisine, prepared by our expert chefs using the finest ingredients. Join us for an unforgettable dining experience.
 3. Menu 
-   [{'name': 'Escargot de Bourgogne', 'price': 30, 'description': 'Classic French dish of snails in garlic herb butter'}, {'name': 'Coq au Vin', 'price': 45, 'description': 'Traditional French dish of chicken slow-cooked in wine'}, {'name': 'Tarte Tatin', 'price': 30, 'description': 'Upside-down caramelized apple tart'}]
+   [{'name': 'Classic Cheeseburger', 'price': 20, 'description': 'A delicious cheeseburger made with premium beef and fresh ingredients'}, {'name': 'Grilled Salmon', 'price': 25, 'description': 'Fresh salmon fillet, grilled to perfection with a side of seasonal vegetables'}, {'name': 'Steak and Fries', 'price': 30, 'description': 'Juicy steak cooked to your liking with a side of crispy fries'}, {'name': 'Caesar Salad', 'price': 15, 'description': 'Fresh romaine lettuce with our special Caesar dressing, parmesan cheese, and croutons'}, {'name': 'Apple Pie', 'price': 10, 'description': 'Homemade apple pie served with a scoop of vanilla ice cream'}]
 4. Comments
    []
 
 Please note that comments are merely expressions of personal opinions and are for reference only. Comments can also be time-sensitive. So, a negative comment of a restaurant does not mean it's not suitable for you. If you are drawn to its menu and advertisements, don't hesitate to give it a try.
 
-[System->Alice]: Please according to your situation, experience and carefully read the information of two restaurant then choose one to dine in.
+[System->Bob]: Please according to your situation, experience and carefully read the information of two restaurant then choose one to dine in.
 
 <<FORMAT>>
-Firstly, your responses must follow the following format:
+Your response must be formated as below.
 {
-    "restaurant": <The restaurant you chose>,
+    "restaurant": <The restaurant you chose, You don't have to order dishes, but must choose one restaurant>,
     "dishes" : [
         The dishes name ordered at this restaurant 
     ],
-    "reason" : <The reason you chose the restaurant. Don't tell you are some cuisine lover. Only compare the inforamtion of restaurants, then choose one>
+    "reason" : <The reason you chose the restaurant. Don't tell you are some cuisine lover. Only compare the information of restaurants, then choose one>
 }
 
-After you get the score of dishes, give me your comment. Your responses must follow the following format:
-{
-    "restaurant": <The restaurant you chose>,
-    "score": <Your score of this experience>
-    "comment": <Your experience, opinions and suggestions, If you had a dine in another restaurant, you can compare them>
-}
-
-[Alice->Alice]: {
-    "restaurant": "Le Petit Gourmet",
+[Bob->Bob]: {
+    "restaurant": "The Yummy Yard",
     "dishes" : [
-        "Coq au Vin", "Ratatouille", "Tarte Tatin"
+        "Vegan Burger", "Caesar Salad"
     ],
-    "reason" : "Given my preference for local comfort foods and maintaining a healthy diet, the dishes at Le Petit Gourmet seem more appealing to me. Specifically, the Ratatouille, a stewed vegetable dish, aligns with my health-conscious preference. Also, the Coq au Vin and Tarte Tatin are classic dishes that are sure to provide a comforting meal. Additionally, the prices at Le Petit Gourmet are more affordable compared to Le Petit Bistro, which is an important factor for me."
+    "reason" : "As a vegetarian, my options are limited at Lin's American Grille. However, The Yummy Yard offers a Vegan Burger, which suits my dietary restrictions. Additionally, the prices at The Yummy Yard are more affordable for my income level."
 }
 
-[System->Alice]: After you taste the dishes, The score of each dish as below (1 is a excellent score):
+[System->Bob]: After you taste the dishes, The score of each dish as below (1 is a excellent score):
 
-Coq au Vin: 0.62
-Ratatouille: 0.57
-Tarte Tatin: 0.51
+Vegan Burger: 0.42
+Caesar Salad: 0.36
 
 <<FORMAT>>
-Now please give your comment for this meal. Notice don't just praise! If the experience is not good, please give a negative review. Your responses must follow the following format!!!
+Now please give your comment for this meal. Notice don't just praise! If the experience is not good, please give a negative review. Your responses must be formated as below:
 {
     "restaurant": <The restaurant you chose>,
-    "score": <Please give a comprehensive score based on the impact on the restaurant, past experience, and the taste of the dishes. Full score is 10, only integer.>
-    "comment": <Your experience, opinions and suggestions, If you had a dine in another restaurant, you can compare them>
+    "score": <Please give a comprehensive score based on the impact on the restaurant, past experience, and the taste of the dishes. Full score is 10, only integer.>,
+    "comment": <Your experience, opinions and suggestions, If you had a dine in another restaurant, you can compare them, no more than 80 words>
 }
 
-[Alice->Alice]: {
-    "restaurant": "Le Petit Gourmet",
-    "score": 6,
-    "comment": "My experience at Le Petit Gourmet was decent, but there were areas where it could have been improved. While the Coq au Vin and Ratatouille were satisfactory, the Tarte Tatin was not as flavorful as I expected. I also think the service could have been more attentive. On the positive side, the ambiance was cozy and inviting, which added to the overall dining experience. Compared to other restaurants I've visited, Le Petit Gourmet provides a decent value for the quality of food and service received."
+[Bob->Bob]: {
+    "restaurant": "The Yummy Yard",
+    "score": 4,
+    "comment": "The Vegan Burger was decent, but it didn't wow me. The Caesar Salad was okay but could use more flavor. The service was excellent, but the food needs improvement. However, it still offered a satisfactory vegetarian-friendly meal. It's not a place I'd rush back to, but it's not bad for the price."
+}
+
+[System->Bob]: The Restaurant " The Yummy Yard "information as below:
+1. Customer Score: 4.0
+2. Advertisement
+   Welcome back to The Yummy Yard! We've made some exciting changes to our menu, including the addition of mouth-watering steak and fresh grilled salmon! Plus, we've improved our recipes to ensure even more delicious dishes. Come and experience the difference!
+3. Menu 
+   [{'name': 'Classic Cheeseburger', 'price': 15, 'description': 'Juicy beef patty with cheddar cheese, lettuce, and tomatoes'}, {'name': 'Vegan Burger', 'price': 16, 'description': 'Delicious plant-based patty with vegan cheese and fresh vegetables'}, {'name': 'BBQ Chicken Wings', 'price': 12, 'description': 'Crispy chicken wings coated in our signature BBQ sauce'}, {'name': 'Caesar Salad', 'price': 10, 'description': 'Classic Caesar salad with fresh lettuce, Parmesan, croutons, and creamy dressing'}, {'name': 'Chocolate Sundae', 'price': 8, 'description': 'Rich chocolate ice cream topped with whipped cream and a cherry'}, {'name': 'Grilled Salmon', 'price': 25, 'description': 'Fresh salmon fillet with a side of seasonal vegetables'}, {'name': 'Steak and Fries', 'price': 30, 'description': 'Juicy steak cooked to your liking with a side of crispy fries'}]
+4. Comments
+   [{'day': 1, 'name': 'Bob', 'score': 4, 'content': "The Vegan Burger was decent, but it didn't wow me. The Caesar Salad was okay but could use more flavor. The service was excellent, but the food needs improvement. However, it still offered a satisfactory vegetarian-friendly meal. It's not a place I'd rush back to, but it's not bad for the price."}]
+
+Please note that comments are merely expressions of personal opinions and are for reference only. Comments can also be time-sensitive. So, a negative comment of a restaurant does not mean it's not suitable for you. If you are drawn to its menu and advertisements, don't hesitate to give it a try.
+
+[System->Bob]: The Restaurant " Lin's American Grille "information as below:
+1. Customer Score: NULL
+2. Advertisement
+   Discover the taste of Lin's American Grille! Now featuring the Veggie Delight Burger, a mouthwatering vegetarian option. Our expert chefs use only the finest ingredients to craft our modern American cuisine. Join us for an unforgettable dining experience.
+3. Menu 
+   [{'name': 'Classic Cheeseburger', 'price': 18, 'description': 'A delicious cheeseburger made with premium beef and fresh ingredients'}, {'name': 'Grilled Salmon', 'price': 23, 'description': 'Fresh salmon fillet, grilled to perfection with a side of seasonal vegetables'}, {'name': 'Steak and Fries', 'price': 28, 'description': 'Juicy steak cooked to your liking with a side of crispy fries'}, {'name': 'Caesar Salad', 'price': 13, 'description': 'Fresh romaine lettuce with our special Caesar dressing, parmesan cheese, and croutons'}, {'name': 'Apple Pie', 'price': 8, 'description': 'Homemade apple pie served with a scoop of vanilla ice cream'}, {'name': 'Veggie Delight Burger', 'price': 18, 'description': 'A delicious plant-based burger with fresh vegetables and a tangy sauce'}]
+4. Comments
+   []
+
+Please note that comments are merely expressions of personal opinions and are for reference only. Comments can also be time-sensitive. So, a negative comment of a restaurant does not mean it's not suitable for you. If you are drawn to its menu and advertisements, don't hesitate to give it a try.
+
+[System->Bob]: Please according to your situation, experience and carefully read the information of two restaurant then choose one to dine in.
+
+<<FORMAT>>
+Your response must be formated as below.
+{
+    "restaurant": <The restaurant you chose, You don't have to order dishes, but must choose one restaurant>,
+    "dishes" : [
+        The dishes name ordered at this restaurant 
+    ],
+    "reason" : <The reason you chose the restaurant. Don't tell you are some cuisine lover. Only compare the information of restaurants, then choose one>
+}
+
+[Bob->Bob]: {
+    "restaurant": "Lin's American Grille",
+    "dishes" : [
+        "Veggie Delight Burger", "Caesar Salad"
+    ],
+    "reason" : "I'm choosing Lin's American Grille this time because they have introduced a new vegetarian option - the Veggie Delight Burger. This shows that they are willing to cater to different dietary needs, which I appreciate. Also, their Caesar Salad is slightly cheaper than the one at The Yummy Yard. I'm curious to see if their service and food quality match up to their attractive menu."
+}
+
+[System->Bob]: After you taste the dishes, The score of each dish as below (1 is a excellent score):
+
+Veggie Delight Burger: 0.39
+Caesar Salad: 0.42
+
+<<FORMAT>>
+Now please tell me your feeling of this meal. If the experience is not good, please give a negative review. Your responses must be formated as below:
+{
+    "restaurant": <The restaurant you chose>,
+    "feeling": <Your experience, feeling. It is just your personal memory, no one else will see it>
+}
+
+[Bob->Bob]: {
+    "restaurant": "Lin's American Grille",
+    "feeling": "The Veggie Delight Burger was quite tasty, but not phenomenal. The Caesar Salad was a pleasant surprise with a good balance of flavors. The service was fantastic, and the staff was attentive. Overall, it was an enjoyable experience. I would consider dining here again."
+}
+
+[System->Bob]: The Restaurant " The Yummy Yard "information as below:
+1. Customer Score: 4.0
+2. Advertisement
+   Welcome back to The Yummy Yard! We've made some exciting changes to our menu, including the addition of mouth-watering Grilled Salmon and Steak & Fries! Plus, we've improved our recipes and increased our dish portions. Come and experience the difference!
+3. Menu 
+   [{'name': 'Classic Cheeseburger', 'price': 18, 'description': 'Juicy beef patty with cheddar cheese, lettuce, and tomatoes'}, {'name': 'Vegan Burger', 'price': 18, 'description': 'Delicious plant-based patty with vegan cheese and fresh vegetables'}, {'name': 'BBQ Chicken Wings', 'price': 14, 'description': 'Crispy chicken wings coated in our signature BBQ sauce'}, {'name': 'Caesar Salad', 'price': 12, 'description': 'Classic Caesar salad with fresh lettuce, Parmesan, croutons, and creamy dressing'}, {'name': 'Chocolate Sundae', 'price': 10, 'description': 'Rich chocolate ice cream topped with whipped cream and a cherry'}, {'name': 'Grilled Salmon', 'price': 25, 'description': 'Fresh salmon fillet with a side of seasonal vegetables'}, {'name': 'Steak and Fries', 'price': 30, 'description': 'Juicy steak cooked to your liking with a side of crispy fries'}]
+4. Comments
+   [{'day': 1, 'name': 'Bob', 'score': 4, 'content': "The Vegan Burger was decent, but it didn't wow me. The Caesar Salad was okay but could use more flavor. The service was excellent, but the food needs improvement. However, it still offered a satisfactory vegetarian-friendly meal. It's not a place I'd rush back to, but it's not bad for the price."}]
+
+Please note that comments are merely expressions of personal opinions and are for reference only. Comments can also be time-sensitive. So, a negative comment of a restaurant does not mean it's not suitable for you. If you are drawn to its menu and advertisements, don't hesitate to give it a try.
+
+[System->Bob]: The Restaurant " Lin's American Grille "information as below:
+1. Customer Score: NULL
+2. Advertisement
+   Experience the unforgettable at Lin's American Grille! Our revamped menu features traditional American classics and innovative vegetarian options. Our dishes are crafted using only the finest ingredients, guaranteeing a mouthwatering dining experience. Come dine with us for an exceptional culinary journey!
+3. Menu 
+   [{'name': 'Classic Cheeseburger', 'price': 20, 'description': 'A delicious cheeseburger made with premium beef and fresh ingredients'}, {'name': 'Grilled Salmon', 'price': 25, 'description': 'Fresh salmon fillet, grilled to perfection with a side of seasonal vegetables'}, {'name': 'Steak and Fries', 'price': 30, 'description': 'Juicy steak cooked to your liking with a side of crispy fries'}, {'name': 'Caesar Salad', 'price': 15, 'description': 'Fresh romaine lettuce with our special Caesar dressing, parmesan cheese, and croutons'}, {'name': 'Apple Pie', 'price': 10, 'description': 'Homemade apple pie served with a scoop of vanilla ice cream'}, {'name': 'Veggie Delight Burger', 'price': 20, 'description': 'A delicious plant-based burger with fresh vegetables and a tangy sauce'}]
+4. Comments
+   []
+
+Please note that comments are merely expressions of personal opinions and are for reference only. Comments can also be time-sensitive. So, a negative comment of a restaurant does not mean it's not suitable for you. If you are drawn to its menu and advertisements, don't hesitate to give it a try.
+
+[System->Bob]: Please according to your situation, experience and carefully read the information of two restaurant then choose one to dine in.
+
+<<FORMAT>>
+Your response must be formated as below.
+{
+    "restaurant": <The restaurant you chose, You don't have to order dishes, but must choose one restaurant>,
+    "dishes" : [
+        The dishes name ordered at this restaurant 
+    ],
+    "reason" : <The reason you chose the restaurant. Don't tell you are some cuisine lover. Only compare the information of restaurants, then choose one>
+}
+
+[Bob->Bob]: {
+    "restaurant": "The Yummy Yard",
+    "dishes" : [
+        "Vegan Burger", "Caesar Salad"
+    ],
+    "reason" : "I'm choosing The Yummy Yard this time because they have a better customer score compared to Lin's American Grille. They also offer a Vegan Burger which caters to my dietary restrictions. Although I had a decent experience at Lin's American Grille, I would like to give The Yummy Yard another try as they seem to have improved their recipes and increased their dish portions according to their advertisement."
+}
+
+[System->Bob]: After you taste the dishes, The score of each dish as below (1 is a excellent score):
+
+Vegan Burger: 0.44
+Caesar Salad: 0.41
+
+<<FORMAT>>
+Now please tell me your feeling of this meal. If the experience is not good, please give a negative review. Your responses must be formated as below:
+{
+    "restaurant": <The restaurant you chose>,
+    "feeling": <Your experience, feeling. It is just your personal memory, no one else will see it>
+}
+
+[Bob->Bob]: {
+    "restaurant": "The Yummy Yard",
+    "feeling": "The Vegan Burger was a pleasant surprise, it was very flavorful and satisfying. The Caesar Salad was fresh and well-made, though not exceptional. The service was great, and the server was friendly and attentive. Overall, it was a nice dining experience and I would be open to eating here again."
+}
+
+[System->Bob]: The Restaurant " The Yummy Yard "information as below:
+1. Customer Score: 4.0
+2. Advertisement
+   Exciting news from The Yummy Yard! We've added a delicious New York Cheesecake to our dessert menu! Plus, we've improved the taste of our Vegan Burger and Caesar Salad, and they're now available at a great price. Don't miss our special promotion during off-peak hours. Come and taste the difference!
+3. Menu 
+   [{'name': 'Classic Cheeseburger', 'price': 18, 'description': 'Juicy beef patty with cheddar cheese, lettuce, and tomatoes'}, {'name': 'Vegan Burger', 'price': 20, 'description': 'Delicious plant-based patty with vegan cheese and fresh vegetables'}, {'name': 'BBQ Chicken Wings', 'price': 14, 'description': 'Crispy chicken wings coated in our signature BBQ sauce'}, {'name': 'Caesar Salad', 'price': 14, 'description': 'Classic Caesar salad with fresh lettuce, Parmesan, croutons, and creamy dressing'}, {'name': 'Chocolate Sundae', 'price': 10, 'description': 'Rich chocolate ice cream topped with whipped cream and a cherry'}, {'name': 'Grilled Salmon', 'price': 25, 'description': 'Fresh salmon fillet with a side of seasonal vegetables'}, {'name': 'Steak and Fries', 'price': 30, 'description': 'Juicy steak cooked to your liking with a side of crispy fries'}, {'name': 'New York Cheesecake', 'price': 12, 'description': 'Creamy and rich cheesecake with a graham cracker crust and fresh berries on top'}]
+4. Comments
+   [{'day': 1, 'name': 'Bob', 'score': 4, 'content': "The Vegan Burger was decent, but it didn't wow me. The Caesar Salad was okay but could use more flavor. The service was excellent, but the food needs improvement. However, it still offered a satisfactory vegetarian-friendly meal. It's not a place I'd rush back to, but it's not bad for the price."}]
+
+Please note that comments are merely expressions of personal opinions and are for reference only. Comments can also be time-sensitive. So, a negative comment of a restaurant does not mean it's not suitable for you. If you are drawn to its menu and advertisements, don't hesitate to give it a try.
+
+[System->Bob]: The Restaurant " Lin's American Grille "information as below:
+1. Customer Score: NULL
+2. Advertisement
+   Experience the extraordinary at Lin's American Grille! Sample our revamped menu featuring traditional American classics, inventive vegetarian options, and our new signature dessert - the Chocolate Lava Cake. Our dishes are prepared with the finest ingredients for a dining experience that's truly unforgettable. Visit us to embark on a unique culinary journey!
+3. Menu 
+   [{'name': 'Classic Cheeseburger', 'price': 22, 'description': 'A delicious cheeseburger made with premium beef, fresh vegetables and a secret sauce, promising an unforgettable taste'}, {'name': 'Grilled Salmon', 'price': 27, 'description': 'Fresh salmon fillet, grilled to perfection with a side of seasonal vegetables and a tangy lemon butter sauce'}, {'name': 'Steak and Fries', 'price': 32, 'description': 'Succulent steak cooked to your liking with a side of crispy fries and our homemade steak sauce'}, {'name': 'Caesar Salad', 'price': 17, 'description': 'Fresh romaine lettuce with our special Caesar dressing, parmesan cheese, croutons, and topped with grilled chicken'}, {'name': 'Apple Pie', 'price': 12, 'description': 'Homemade apple pie served with a scoop of vanilla ice cream, garnished with cinnamon and powdered sugar'}, {'name': 'Veggie Delight Burger', 'price': 22, 'description': 'A delectable plant-based burger with fresh vegetables, a tangy sauce, and vegan cheese, served with sweet potato fries'}, {'name': 'Lobster Bisque', 'price': 15, 'description': 'Creamy and rich lobster bisque, made from fresh lobsters and a blend of aromatic herbs and spices'}, {'name': 'Signature Chocolate Lava Cake', 'price': 12, 'description': 'Our signature dessert, a warm chocolate cake with a gooey center, served with a scoop of vanilla ice cream'}]
+4. Comments
+   []
+
+Please note that comments are merely expressions of personal opinions and are for reference only. Comments can also be time-sensitive. So, a negative comment of a restaurant does not mean it's not suitable for you. If you are drawn to its menu and advertisements, don't hesitate to give it a try.
+
+[System->Bob]: Please according to your situation, experience and carefully read the information of two restaurant then choose one to dine in.
+
+<<FORMAT>>
+Your response must be formated as below.
+{
+    "restaurant": <The restaurant you chose, You don't have to order dishes, but must choose one restaurant>,
+    "dishes" : [
+        The dishes name ordered at this restaurant 
+    ],
+    "reason" : <The reason you chose the restaurant. Don't tell you are some cuisine lover. Only compare the information of restaurants, then choose one>
+}
+
+[Bob->Bob]: {
+    "restaurant": "Lin's American Grille",
+    "dishes" : [
+        "Veggie Delight Burger", "Caesar Salad"
+    ],
+    "reason" : "I'm choosing Lin's American Grille this time because they offer a Veggie Delight Burger which caters to my dietary restrictions. Even though they don't have a customer score yet, their menu and advertisement show that they put effort into creating delicious and inventive vegetarian options. Additionally, their new signature dessert, the Chocolate Lava Cake, sounds tempting."
+}
+
+[System->Bob]: After you taste the dishes, The score of each dish as below (1 is a excellent score):
+
+Veggie Delight Burger: 0.43
+Caesar Salad: 0.46
+
+<<FORMAT>>
+Now please tell me your feeling of this meal. If the experience is not good, please give a negative review. Your responses must be formated as below:
+{
+    "restaurant": <The restaurant you chose>,
+    "feeling": <Your experience, feeling. It is just your personal memory, no one else will see it>
+}
+
+[Bob->Bob]: {
+    "restaurant": "Lin's American Grille",
+    "feeling": "The Veggie Delight Burger was quite tasty, it was well seasoned and the sweet potato fries were a nice touch. The Caesar Salad was slightly above average, it was fresh but lacked a little bit in terms of flavor. However, the service was excellent and the staff were very friendly and accommodating. Overall, I had a pleasant dining experience here."
+}
+
+[System->Bob]: The Restaurant " The Yummy Yard "information as below:
+1. Customer Score: 4.0
+2. Advertisement
+   Here at The Yummy Yard, we're constantly working to give you the best dining experience. We've just added a mouthwatering New York Cheesecake to our menu! We've also improved the recipe and reduced the price of our Vegan Burger and Caesar Salad. Don't miss out on our special off-peak hours promotion. Come and taste the difference!
+3. Menu 
+   [{'name': 'Classic Cheeseburger', 'price': 18, 'description': 'Juicy beef patty with cheddar cheese, lettuce, and tomatoes'}, {'name': 'Vegan Burger', 'price': 17, 'description': 'Delicious plant-based patty with vegan cheese and fresh vegetables'}, {'name': 'BBQ Chicken Wings', 'price': 14, 'description': 'Crispy chicken wings coated in our signature BBQ sauce'}, {'name': 'Caesar Salad', 'price': 13, 'description': 'Classic Caesar salad with fresh lettuce, Parmesan, croutons, and creamy dressing'}, {'name': 'Chocolate Sundae', 'price': 10, 'description': 'Rich chocolate ice cream topped with whipped cream and a cherry'}, {'name': 'Grilled Salmon', 'price': 25, 'description': 'Fresh salmon fillet with a side of seasonal vegetables'}, {'name': 'Steak and Fries', 'price': 30, 'description': 'Juicy steak cooked to your liking with a side of crispy fries'}, {'name': 'New York Cheesecake', 'price': 12, 'description': 'Creamy and rich cheesecake with a graham cracker crust and fresh berries on top'}]
+4. Comments
+   [{'day': 1, 'name': 'Bob', 'score': 4, 'content': "The Vegan Burger was decent, but it didn't wow me. The Caesar Salad was okay but could use more flavor. The service was excellent, but the food needs improvement. However, it still offered a satisfactory vegetarian-friendly meal. It's not a place I'd rush back to, but it's not bad for the price."}]
+
+Please note that comments are merely expressions of personal opinions and are for reference only. Comments can also be time-sensitive. So, a negative comment of a restaurant does not mean it's not suitable for you. If you are drawn to its menu and advertisements, don't hesitate to give it a try.
+
+[System->Bob]: The Restaurant " Lin's American Grille "information as below:
+1. Customer Score: NULL
+2. Advertisement
+   Discover the extraordinary at Lin's American Grille! Indulge in our updated menu featuring traditional American classics, unique vegetarian options, and two signature desserts - the Chocolate Lava Cake and the new Blueberry Cheesecake. Our meals are prepared with the finest ingredients to ensure an unforgettable dining experience. Join us for a unique culinary adventure!
+3. Menu 
+   [{'name': 'Classic Cheeseburger', 'price': 24, 'description': 'A delicious cheeseburger made with 100% Angus beef, fresh vegetables, and a secret sauce, offering an unforgettable taste experience'}, {'name': 'Grilled Salmon', 'price': 29, 'description': 'Fresh Atlantic salmon fillet, grilled to perfection with a side of seasonal vegetables and a tangy lemon butter sauce'}, {'name': 'Steak and Fries', 'price': 34, 'description': 'Succulent prime cut steak cooked to your liking with a side of crispy fries and our homemade steak sauce'}, {'name': 'Caesar Salad', 'price': 19, 'description': 'Fresh romaine lettuce with our special Caesar dressing, parmesan cheese, croutons, and topped with grilled free-range chicken'}, {'name': 'Apple Pie', 'price': 12, 'description': 'Homemade apple pie served with a scoop of vanilla ice cream, garnished with cinnamon and powdered sugar'}, {'name': 'Veggie Delight Burger', 'price': 24, 'description': 'A delectable plant-based burger with fresh vegetables, a tangy sauce, and vegan cheese, served with sweet potato fries'}, {'name': 'Signature Chocolate Lava Cake', 'price': 14, 'description': 'Our signature dessert, a warm chocolate cake with a gooey center, served with a scoop of vanilla ice cream'}, {'name': 'Seasonal Vegetable Pasta', 'price': 22, 'description': 'A delightful pasta dish with fresh seasonal vegetables in a creamy sauce'}, {'name': 'Blueberry Cheesecake', 'price': 14, 'description': 'A creamy and rich cheesecake topped with fresh blueberry compote and whipped cream'}]
+4. Comments
+   []
+
+Please note that comments are merely expressions of personal opinions and are for reference only. Comments can also be time-sensitive. So, a negative comment of a restaurant does not mean it's not suitable for you. If you are drawn to its menu and advertisements, don't hesitate to give it a try.
+
+[System->Bob]: Please according to your situation, experience and carefully read the information of two restaurant then choose one to dine in.
+
+<<FORMAT>>
+Your response must be formated as below.
+{
+    "restaurant": <The restaurant you chose, You don't have to order dishes, but must choose one restaurant>,
+    "dishes" : [
+        The dishes name ordered at this restaurant 
+    ],
+    "reason" : <The reason you chose the restaurant. Don't tell you are some cuisine lover. Only compare the information of restaurants, then choose one>
+}
+
+[Bob->Bob]: {
+    "restaurant": "Lin's American Grille",
+    "dishes" : [
+        "Veggie Delight Burger", "Seasonal Vegetable Pasta", "Blueberry Cheesecake"
+    ],
+    "reason" : "Although The Yummy Yard has a good customer score and a cheaper menu, I'm choosing Lin's American Grille again because they offer more variety in their vegetarian options. The Veggie Delight Burger and the Seasonal Vegetable Pasta both sound delightful and cater to my dietary needs. The addition of the Blueberry Cheesecake to their dessert menu is also very appealing. Despite having no customer score yet, I had a satisfactory experience during my last visit and I'm willing to give them another try."
+}
+
+[System->Bob]: After you taste the dishes, The score of each dish as below (1 is a excellent score):
+
+Veggie Delight Burger: 0.45
+Seasonal Vegetable Pasta: 0.48
+Blueberry Cheesecake: 0.49
+
+<<FORMAT>>
+Now please tell me your feeling of this meal. If the experience is not good, please give a negative review. Your responses must be formated as below:
+{
+    "restaurant": <The restaurant you chose>,
+    "feeling": <Your experience, feeling. It is just your personal memory, no one else will see it>
+}
+
+[Bob->Bob]: {
+    "restaurant": "Lin's American Grille",
+    "feeling": "The Veggie Delight Burger was slightly better this time, with a good blend of flavors. The Seasonal Vegetable Pasta was delicious and the vegetables were fresh and crunchy. The Blueberry Cheesecake was the highlight of the meal, it was creamy and the blueberry compote add a nice tangy flavor. The service was good as before and the staff were attentive to my needs. I enjoyed my meal at Lin's American Grille."
 }
 

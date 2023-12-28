@@ -1,0 +1,315 @@
+[Lin->Lin]: Firstly, I will name my restaurant "The American Feast," a name that gives customers a clear idea of the style of food they can expect. This will help attract customers who are specifically in the mood for American cuisine. In terms of the budget, I will allocate it as follows:
+
+- $3,500 for high-quality ingredients: Fresh, locally sourced products are key to creating mouthwatering dishes that stand out. I will prioritize this to ensure the quality of our food is top-notch.
+
+- $3,000 for hiring skilled chefs: A talented team of chefs is vital to produce delicious, well-presented dishes. I will offer competitive salaries to attract and retain the best talent.
+
+- $2,000 for a comfortable and pleasant interior: The ambiance of a restaurant is crucial in attracting customers. I will invest in comfortable furniture, aesthetic decor, and a clean restaurant to provide a cozy and inviting dining experience.
+
+- $1,000 for marketing and advertising: I will employ various marketing strategies such as creating a website, using social media platforms, and running local ads to bring in customers.
+
+- $500 for a well-trained service staff: Excellent customer service is key to a successful restaurant. I will hire friendly and professional staff that can provide a great dining experience for our customers.
+
+Once the restaurant is open, I will implement the following strategies:
+
+1. Regular Menu Updates: I will update the menu regularly based on seasonality and local produce availability. This will allow us to serve fresh and delicious dishes that change throughout the year, keeping our customers excited and eager to return.
+
+2. Special Promotions: I will organize special events and promotions, such as a happy hour or a weekly special dish, to attract more customers and make our restaurant stand out.
+
+3. Community Engagement: I will engage with the local community by participating in local events, sponsoring local sports teams, and collaborating with local businesses. This will help build a strong relationship with the community and create a loyal customer base.
+
+4. Online Presence: I will maintain an active online presence on various social media platforms and our website. This will keep our customers informed about our latest updates and promotions, and also attract new customers.
+
+5. Customer Feedback: I will regularly collect customer feedback to continuously improve our food and services. This will help us meet our customers' expectations and provide a better dining experience.
+
+Through these strategies, I aim to ensure the success of "The American Feast" and secure its position as the top restaurant in our small town.
+
+[System->Lin]: Please outline the strategy you have adopted for your restaurant in order to succeed in competition. Consider factors such as selling more dishes at a lower cost or catering to a high-end clientele. It is crucial to find the right approach for your restaurant, as this is the first and most important aspect.
+
+Please keep in mind the following rules:
+1. Chefs:
+  - You are not allowed to communicate with or train the chefs.
+  - The level of a chef is directly proportional to their salary.
+2. Dishes:
+  - The taste of a dish is determined by its original price. If you wish to enhance the taste, you can adjust the original price to procure better ingredients.
+  - The ratio of the cost price to the selling price of a dish impacts the customer's experience.
+3. Advertisement:
+  - The only available channel for advertising is the advertising module. If you wish to communicate with customers, you can only do so through this module.
+
+So, please list the actions you want to perform, then do it on corresponding module.
+
+[Lin->Lin]: I aim to position "The American Feast" as a mid-range restaurant, offering delicious, high-quality American dishes at reasonable prices. Instead of targeting a high-end clientele, my strategy is to focus on volume sales. With this approach, I hope to attract a wider audience and generate a healthy revenue stream. Here's how I'll implement this strategy:
+
+1. Chefs: I will hire a mix of experienced and lower-level chefs. The experienced chefs will bring their culinary expertise to our kitchen, while the lower-level chefs can learn from them, thereby maintaining a balance in salary expenses.
+
+2. Dishes: I will ensure that our dishes, while made from high-quality ingredients, are priced affordably. I will test out different cost-to-selling price ratios to find the sweet spot where customers feel they are getting good value for their money, while also ensuring a fair profit margin for the restaurant.
+
+3. Advertisement: I will utilize the advertising module to regularly communicate with our customers. I'll spread the word about our special offers, new menu items, and any events we're hosting. I'll also use this platform to gather customer feedback, helping us to continually improve our services.
+
+To implement these actions:
+
+1. Chefs: I'll go to the Personnel module, and hire a team of chefs with a mix of experience levels, ensuring we stay within our allocated budget for salaries.
+
+2. Dishes: I'll go to the Kitchen module, and set the cost-to-selling price ratio for our dishes to achieve a balance between affordability for customers and profitability for the restaurant.
+
+3. Advertisement: I'll use the Advertising module to launch our marketing campaigns and interact with customers.
+
+By executing these actions, I hope to build a successful, profitable restaurant that outperforms our competition.
+
+[System->Lin]: Now your restaurant basic information as below:
+<INPUT 0>
+
+<<FORMAT>>
+If the above inforamtion have not been set, your response must follow the following format:
+{
+    "type": "add",
+    "data":{
+        "name": <Your restaurant name>,
+        "money": <The number I have told you>,
+        "rent": 100,
+        "day": 1
+    }
+}
+
+else if you want to modify the restaurant name, your response must follow the following format:
+{
+    "type": "partial_update",
+    "id": 1,
+    "data": {
+        "name": <New name>
+    }
+}
+
+else if you think continue to operate will increase losses, you can response TERMINAL to exit this competition.
+
+else response None
+
+[Lin->Lin]: {
+    "type": "add",
+    "data":{
+        "name": "The American Feast",
+        "money": 10000,
+        "rent": 100,
+        "day": 1
+    }
+}
+
+[System->Lin]: Welcome to the Menu Management Module. Now your menu info as below:
+
+
+<<FORMAT>>
+There are some rules:
+  - The menu can accommodate a maximum of ten items. Therefore, at times, you may need to remove some items to make room for new ones
+  - Your item name must be English.
+  - Your item can be more than just dishes.
+
+You can perform the following actions:
+1. Add an item to the menu:
+{
+    "type": "add",
+    "data":{
+        "name": <Item Name>,
+        "description": <Item Description>,
+        "price": <Integer>,
+        "cost_price": <Integer>
+    }
+}
+
+2. Delete an item from the menu:
+{
+    "type": "delete",
+    "id": <Item id>
+}
+
+3. Update an item in the menu:
+{
+    "type": "partial_update",
+    "id": <Item id>,
+    "data":{
+        "name": <Item Name>,
+        "description": <Item Description>,
+        "price": <Integer>,
+        "cost_price": <Integer>
+    }
+}
+
+You can put forward other ideas or requests! please append to the end of JSON data.
+
+Your response must be formated as:
+[
+    {
+        "type": <the type shown above>,
+        "data": <corresponding type of data format>
+        If necessary, add "id" here
+    },
+    ...
+    {
+        "type": "other",
+        "data": "other ideas or requests",
+    }
+]
+
+Please provide the required JSON data for the specific action you want to take. Do not include any other sentences in your response.
+
+[Lin->Lin]: [
+    {
+        "type": "add",
+        "data":{
+            "name": "Classic Burger",
+            "description": "A juicy, perfectly grilled beef patty topped with crisp lettuce, ripe tomatoes, and creamy cheese, served with a side of golden fries.",
+            "price": 12,
+            "cost_price": 6
+        }
+    },
+    {
+        "type": "add",
+        "data":{
+            "name": "BBQ Ribs",
+            "description": "Tender, slow-cooked ribs smothered in a tangy, smoky BBQ sauce, served with coleslaw and cornbread.",
+            "price": 15,
+            "cost_price": 7
+        }
+    },
+    {
+        "type": "add",
+        "data":{
+            "name": "Chicken Caesar Salad",
+            "description": "Fresh romaine lettuce, grilled chicken breast, croutons, shaved parmesan, and creamy Caesar dressing.",
+            "price": 10,
+            "cost_price": 5
+        }
+    },
+    {
+        "type": "add",
+        "data":{
+            "name": "Apple Pie",
+            "description": "A warm slice of classic apple pie, served with a scoop of vanilla ice cream.",
+            "price": 7,
+            "cost_price": 3
+        }
+    },
+    {
+        "type": "add",
+        "data":{
+            "name": "Craft Beer",
+            "description": "A selection of locally brewed craft beers.",
+            "price": 5,
+            "cost_price": 2
+        }
+    }
+]
+
+[System->Lin]: Welcome to the Chef Management Module. Now your chef info as below:
+ 
+
+<<FORMAT>>
+You can perform the following actions:
+
+1. Hire a new chef:
+{
+    "type": "add",
+    "data": {
+        "name": <Chef Name>,
+        "salary": <Chef Salary>
+    }
+}
+
+2. Fire a chef:
+{
+    "type": "delete",
+    "id": <Chef ID>
+}
+
+3. Change a chef's salary:
+{
+    "type": "partial_update",
+    "id": <Chef ID>,
+    "data": {
+        "salary": <New Salary>
+    }
+}
+
+You must put forward other ideas or requests, please append to the end of JSON data, like this:
+{
+    "type": "other",
+    "data": "Other ideas or requests"
+}
+
+Your responses must be formatted as follows:
+
+[
+    {
+        "type": <the type shown above>,
+        "data": <corresponding type of data format>
+        If necessary, add "id" or other relevant IDs here
+    },
+    {
+        "type": as above,
+        "data": as above,
+        If necessary, add "id" or other relevant IDs here
+    },
+    ...
+]
+
+If nothing you want to change, return None
+
+Please provide the required JSON data for the specific action you want to take. Do not include any other sentences in your response.
+
+[Lin->Lin]: [
+    {
+        "type": "add",
+        "data":{
+            "name": "Chef Ramsey",
+            "salary": 1200
+        }
+    },
+    {
+        "type": "add",
+        "data":{
+            "name": "Chef Oliver",
+            "salary": 1000
+        }
+    },
+    {
+        "type": "add",
+        "data":{
+            "name": "Chef Gordon",
+            "salary": 800
+        }
+    }
+]
+
+[System->Lin]: Welcome to the Advertisement Management Module. Now your Advertisement as below:
+<INPUT 0>
+
+<<FORMAT>>
+You can perform the following actions:
+
+1. If these inforamtion have not been set, your response must follow the following format:
+{
+    "type": "add",
+    "data":{
+        "content": <Advertisement Content (up to 100 Words) >,
+    }
+}
+
+2. Update this Advertisement:
+{
+    "type": "update",
+    "id": "1",
+    "data":{
+        "content": <Advertisement Content (up to 100 Words) >,
+    }
+}
+
+Your response must be formated as above.
+
+Please provide the required JSON data for the specific action you want to take. Do not include any other sentences in your response.
+
+[Lin->Lin]: {
+    "type": "add",
+    "data":{
+        "content": "Experience the true taste of America at 'The American Feast'! Enjoy our Classic Burger, BBQ Ribs, Chicken Caesar Salad, and end your meal with our delicious Apple Pie. Don't forget to try our locally brewed craft beers. Visit us today for a memorable dining experience!"
+    }
+}
+

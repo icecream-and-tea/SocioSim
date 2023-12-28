@@ -1,18 +1,30 @@
-[Lin->Lin]: To begin with, my strategy will be based on three main pillars: financial stability, product quality, and customer satisfaction. 
+[Lin->Lin]: Firstly, I would choose the name "Lin's American Grille" for my restaurant, focusing on traditional American cuisine with a modern twist. This will create a unique selling point that will differentiate us from our competitors. My allocation of initial capital would be as follows:
 
-1. Financial Stability: I will allocate $2,000 towards hiring a skilled chef and $1,500 for waitstaff. Ensuring I have a solid team is essential for the smooth operation of the restaurant. I will then set aside $2,000 for restaurant maintenance and utilities, $1,500 for initial advertising, and $3,000 for purchasing high-quality ingredients. 
+1. $3000 for initial stock of high-quality ingredients. This will ensure that our food tastes good and attracts repeat customers.
+2. $2000 for hiring experienced chefs and offering them competitive salaries. This will encourage them to stay loyal to our restaurant.
+3. $2000 for interior and exterior décor to create a comfortable and inviting atmosphere.
+4. $2000 for marketing and advertising to create awareness about our restaurant in the town.
+5. $1000 as a reserve for unexpected expenses.
 
-2. Product Quality: My restaurant, named "Le Petit Bistro", will offer a curated selection of traditional French dishes made from high-quality, locally sourced ingredients. I will work closely with my chef to ensure we serve the best quality food while also maintaining cost-effectiveness.
+To maintain a competitive edge, I would take the following actions:
 
-3. Customer Satisfaction: Alongside top-quality food, excellent customer service is key to winning a loyal customer base. I will invest in staff training to ensure our team is skilled, friendly, and attentive.
+1. Regularly review our menu: I would ensure that our menu is not stagnant and offers a variety of dishes that cater to different tastes. I would also introduce special seasonal dishes to attract customers.
 
-In addition to these pillars, I plan to continuously innovate and improve. I will regularly review our menu, removing less popular items and introducing new ones to keep our offerings fresh and exciting. I will also frequently review our prices, ensuring they remain competitive without compromising on quality.
+2. Offer excellent customer service: I would train our staff to provide excellent customer service. This would make our customers feel valued and encourage them to come back.
 
-Next, I will focus on marketing and branding. I will invest in professional photography for our dishes and use these images in our advertising campaigns. I will also make use of social media and local advertising to reach a wider audience. Additionally, I plan to host themed nights, cooking classes, and wine tastings to attract customers and generate buzz about Le Petit Bistro.
+3. Implement a loyalty program: This would reward regular customers and encourage them to keep coming back. This could be in the form of discounts or free dishes for repeat customers.
 
-Finally, I will actively seek feedback from our customers. By understanding what our customers like and don't like about our restaurant, we can make the necessary changes to keep them coming back.
+4. Engage with the community: I would organize events at our restaurant, such as cooking classes or charity events, to engage with the community and increase our visibility.
 
-In summary, my strategy is to build a financially stable restaurant that offers high-quality food and excellent customer service. I plan to continuously innovate our offerings and use effective marketing techniques to attract and retain customers. With this approach, I am confident Le Petit Bistro will triumph over its competitor.
+5. Regularly analyze our competition: I would keep an eye on what our competitor is doing and adjust our strategies accordingly.
+
+6. Use social media for marketing: I would use social media platforms to advertise our restaurant and engage with our customers. This would also provide a platform where our customers can leave reviews, which would help us improve.
+
+7. Implement strict hygiene standards: Hygiene is crucial in the food industry, and maintaining high standards would earn us a good reputation.
+
+8. Offer takeout and delivery services: With the increasing popularity of food delivery services, I would partner with local delivery companies to reach customers who prefer to eat at home.
+
+By implementing these strategies, I believe Lin's American Grille can become the preferred dining destination in our small town.
 
 [System->Lin]: Please outline the strategy you have adopted for your restaurant in order to succeed in competition. Consider factors such as selling more dishes at a lower cost or catering to a high-end clientele. It is crucial to find the right approach for your restaurant, as this is the first and most important aspect.
 
@@ -28,26 +40,20 @@ Please keep in mind the following rules:
 
 So, please list the actions you want to perform, then do it on corresponding module.
 
-[Lin->Lin]: Given these rules, here are the actions I would take:
+[Lin->Lin]: Given the nature of our town, I believe that focusing on being a high-quality restaurant rather than a low-cost one would be the most effective strategy. We will cater to a high-end clientele, providing them with the best ingredients and top-notch service. Here are the steps I would take in line with this strategy:
 
-1. Chefs: I will hire a level 2 chef, as they offer a good balance of skill and cost. I will allocate $1,000 for their salary.
+1. Chefs: 
+   - I would allocate a significant portion of our budget to hire experienced and highly skilled chefs. Their high level of expertise would justify the high prices of our dishes due to their superior taste.
 
-2. Dishes: I will choose to sell three types of dishes: a starter, a main dish, and a dessert. I will allocate $1,000 for the ingredients of each dish. To ensure a good profit margin, I will price each dish at three times its cost. 
+2. Dishes: 
+   - I would ensure that our dishes are made from the best ingredients, even if it means setting a higher original price. I believe that our clientele would be willing to pay more for better taste and quality.
+   - We will aim for a cost price to selling price ratio of 1:3. This will allow us to maintain a good profit margin while still providing value for money to our customers.
 
-3. Advertisement: I will spend $500 on advertising. I will use this budget to promote our restaurant and its offerings, emphasizing our commitment to quality and customer service. 
+3. Advertisement: 
+  - I would utilize the advertising module to communicate with our customers, informing them of our high-quality ingredients, skilled chefs, and excellent customer service. We will also highlight our unique selling proposition - our modern take on traditional American cuisine.
+  - I would also use the advertising module to announce any special offers, events, or new dishes to our customers.
 
-In terms of strategy, I believe that offering a high-quality, curated menu at a slightly higher price point will be more effective than attempting to sell more dishes at a lower cost. By focusing on quality rather than quantity, we can cater to a more discerning clientele and build a reputation for excellence.
-
-Here is how I would allocate my funds:
-
-- Chef's salary: $1,000
-- Ingredients for dishes: $3,000 ($1,000 per dish)
-- Advertising: $500
-- Waitstaff and utilities: $3,500
-
-This leaves me with $2,000 as a contingency fund for any unexpected expenses. I will review and adjust this budget as necessary based on the restaurant's performance.
-
-Now, I will proceed to perform these actions in the corresponding modules.
+By focusing on quality over quantity, we aim to carve out a niche for ourselves in the market and attract a loyal customer base that appreciates the value we provide.
 
 [System->Lin]: Now your restaurant basic information as below:
 <INPUT 0>
@@ -60,16 +66,16 @@ If the above inforamtion have not been set, your response must follow the follow
         "name": <Your restaurant name>,
         "money": <The number I have told you>,
         "rent": 100,
-        "day": 1,
+        "day": 1
     }
 }
 
-else if you want to modify the restaurant name, your response must follow the following format:
+else if you want to modify the restaurant name, your response must follow the following format!!!: 
 {
     "type": "partial_update",
     "id": 1,
     "data": {
-        "name": <New name>,
+        "name": <New name>
     }
 }
 
@@ -80,7 +86,7 @@ else response None
 [Lin->Lin]: {
     "type": "add",
     "data":{
-        "name": "Le Petit Bistro",
+        "name": "Lin's American Grille",
         "money": 10000,
         "rent": 100,
         "day": 1
@@ -148,8 +154,26 @@ Please provide the required JSON data for the specific action you want to take. 
     {
         "type": "add",
         "data":{
-            "name": "Escargot de Bourgogne",
-            "description": "Classic French dish of snails in garlic herb butter",
+            "name": "Classic Cheeseburger",
+            "description": "A delicious cheeseburger made with premium beef and fresh ingredients",
+            "price": 20,
+            "cost_price": 7
+        }
+    },
+    {
+        "type": "add",
+        "data":{
+            "name": "Grilled Salmon",
+            "description": "Fresh salmon fillet, grilled to perfection with a side of seasonal vegetables",
+            "price": 25,
+            "cost_price": 8
+        }
+    },
+    {
+        "type": "add",
+        "data":{
+            "name": "Steak and Fries",
+            "description": "Juicy steak cooked to your liking with a side of crispy fries",
             "price": 30,
             "cost_price": 10
         }
@@ -157,19 +181,19 @@ Please provide the required JSON data for the specific action you want to take. 
     {
         "type": "add",
         "data":{
-            "name": "Coq au Vin",
-            "description": "Traditional French dish of chicken slow-cooked in wine",
-            "price": 45,
-            "cost_price": 15
+            "name": "Caesar Salad",
+            "description": "Fresh romaine lettuce with our special Caesar dressing, parmesan cheese, and croutons",
+            "price": 15,
+            "cost_price": 5
         }
     },
     {
         "type": "add",
         "data":{
-            "name": "Tarte Tatin",
-            "description": "Upside-down caramelized apple tart",
-            "price": 30,
-            "cost_price": 10
+            "name": "Apple Pie",
+            "description": "Homemade apple pie served with a scoop of vanilla ice cream",
+            "price": 10,
+            "cost_price": 3
         }
     }
 ]
@@ -233,9 +257,16 @@ Please provide the required JSON data for the specific action you want to take. 
 [Lin->Lin]: [
     {
         "type": "add",
-        "data": {
-            "name": "Chef Antoine",
+        "data":{
+            "name": "Chef Ramsey",
             "salary": 1000
+        }
+    },
+    {
+        "type": "add",
+        "data":{
+            "name": "Chef Julia",
+            "salary": 800
         }
     }
 ]
@@ -263,35 +294,36 @@ You can perform the following actions:
     }
 }
 
-Your response must be formated as above.
+Your response must be formatted as above.
 
 Please provide the required JSON data for the specific action you want to take. Do not include any other sentences in your response.
 
 [Lin->Lin]: {
     "type": "add",
     "data":{
-        "content": "Experience the authentic taste of French cuisine at Le Petit Bistro. Our carefully curated menu, prepared by Chef Antoine, showcases the best of French cooking. Join us for a gastronomic journey filled with flavors and aromas that will transport you straight to France."
+        "content": "Welcome to Lin's American Grille! Experience our modern take on traditional American cuisine, prepared by our expert chefs using the finest ingredients. Join us for an unforgettable dining experience."
     }
 }
 
 [System->Lin]: Today is day 1 . 
-The daybook as below: {'id': 1, 'income': 0, 'expense': 133, 'num_of_customer': 0, 'num_of_chef': 1, 'chef_salary': 1000, 'dish_score': 0.26666666666666666, 'customer_score': 0.0, 'dishes': '{}'} . 
+The daybook as below: {'id': 1, 'income': 0, 'expense': 160, 'num_of_customer': 0, 'num_of_chef': 2, 'chef_salary': 1800, 'dish_score': 0.3436666666666667, 'customer_score': 0.0, 'dishes': '{}'} . 
 The customer comments as below [] 
 
 The rival restaurant info as below:
-Restaurant: Le Petit Gourmet
- Number of customers: 50
- Customer Score: NULL
- Customer Comments: [] Menu: [{'name': 'Coq au Vin', 'price': 30, 'description': 'Classic French stew in which chicken is braised slowly in red wine and a little brandy to yield a supremely rich sauce.'}, {'name': 'Bouillabaisse', 'price': 35, 'description': 'A traditional Provençal fish stew originating from the port city of Marseille.'}, {'name': 'Ratatouille', 'price': 25, 'description': 'A stewed vegetable dish, originating from Nice, with tomatoes, eggplant, zucchini, bell pepper, onion, and garlic.'}, {'name': 'Tarte Tatin', 'price': 20, 'description': 'An upside-down pastry in which the fruit (usually apples) are caramelized in butter and sugar before the tart is baked.'}, {'name': 'Chateauneuf du Pape', 'price': 50, 'description': 'A full-bodied red wine from the Rhône wine region in southeastern France.'}]
+Restaurant: The Yummy Yard 
+Number of customers: 1 
+Customer Comments: [{'day': 1, 'name': 'Bob', 'score': 4, 'content': "The Vegan Burger was decent, but it didn't wow me. The Caesar Salad was okay but could use more flavor. The service was excellent, but the food needs improvement. However, it still offered a satisfactory vegetarian-friendly meal. It's not a place I'd rush back to, but it's not bad for the price."}] 
+Menu: [{'name': 'Classic Cheeseburger', 'price': 12, 'description': 'Juicy beef patty with cheddar cheese, lettuce, and tomatoes'}, {'name': 'Vegan Burger', 'price': 14, 'description': 'Delicious plant-based patty with vegan cheese and fresh vegetables'}, {'name': 'BBQ Chicken Wings', 'price': 10, 'description': 'Crispy chicken wings coated in our signature BBQ sauce'}, {'name': 'Caesar Salad', 'price': 8, 'description': 'Classic Caesar salad with fresh lettuce, Parmesan, croutons, and creamy dressing'}, {'name': 'Chocolate Sundae', 'price': 6, 'description': 'Rich chocolate ice cream topped with whipped cream and a cherry'}]
 
-[Lin->Lin]: {
-    "type": "adjust",
-    "data": {
-        "name": "Escargot de Bourgogne",
-        "price": 25,
-        "cost_price": 10
-    }
-}
+[Lin->Lin]: Based on the feedback from the rival restaurant's customers, it seems like our competitor's vegetarian options are not as strong as they could be. I think we can capitalize on this by introducing a high-quality vegetarian dish to our menu. Additionally, our prices are higher than our competitor's. While we aim for high quality, we don't want to price ourselves out of the market. I would like to adjust our menu prices slightly to be more competitive. 
+
+Here are my changes:
+1. Introduce a new dish: Veggie Delight Burger - A delicious plant-based burger with fresh vegetables and a tangy sauce. Priced at $18, cost price $6.
+2. Adjust the prices of our current dishes: Classic Cheeseburger - $18, Grilled Salmon - $23, Steak and Fries - $28, Caesar Salad - $13, Apple Pie - $8.
+
+Also, let's enhance our advertisement to highlight our new vegetarian option and emphasize the quality of our ingredients.
+
+New Advertisement: "Discover the taste of Lin's American Grille! Now featuring the Veggie Delight Burger, a mouthwatering vegetarian option. Our expert chefs use only the finest ingredients to craft our modern American cuisine. Join us for an unforgettable dining experience."
 
 [System->Lin]: Please outline the strategy you have adopted for your restaurant in order to succeed in competition. Consider factors such as selling more dishes at a lower cost or catering to a high-end clientele. It is crucial to find the right approach for your restaurant, as this is the first and most important aspect.
 
@@ -307,18 +339,38 @@ Please keep in mind the following rules:
 
 So, please list the actions you want to perform, then do it on corresponding module.
 
-[Lin->Lin]: My strategy for success in this competition revolves around three main areas: 
+[Lin->Lin]: Thank you for the clarification. I am going to adopt a two-pronged strategy to outperform my competitor.
 
-1. Dishes: I plan to offer a carefully curated menu focusing on the quality over quantity. The dishes will be priced slightly higher than our competitor to reflect the quality of ingredients we use. However, we'll also make sure that they're not so high as to dissuade potential customers. For instance, I have reduced the price of our 'Escargot de Bourgogne' dish to $25 which is still higher than most dishes of our competitor but not excessive. By striking the right balance between cost and quality, we aim to attract customers who appreciate and are willing to pay for high-quality French cuisine.
+1. Differentiation: I am going to differentiate my restaurant by offering a high-quality vegetarian dish that my competitor lacks. I am going to add a dish called Veggie Delight Burger to my menu using the Dish Management Module.
 
-2. Chefs: Our chef Antoine is a seasoned professional whose expertise will ensure that our dishes are top-notch. His salary is a reflection of his skills and experience. We believe that his culinary creations will be a key factor in attracting and retaining customers.
+2. Competitive Pricing: While maintaining the quality of our dishes, I am going to make the prices more competitive. I will adjust the prices of our current dishes using the Dish Management Module.
 
-3. Advertising: Through our advertising, we aim to convey the authenticity and quality of our cuisine and the dining experience we offer. We'll highlight the expertise of our chef, the quality of our ingredients, and the care we put into each dish. Our goal is to entice people to try our restaurant and to keep them coming back for more.
+For the advertising strategy, I am going to highlight our new vegetarian dish and the quality of our ingredients. I will use the Advertising Module to communicate this to our potential customers.
 
-This strategy, we believe, will ensure the triumph of our restaurant in this competition.
+Here are my actions:
+
+Dish Management Module:
+
+1. Add a new dish:
+   - Name: Veggie Delight Burger
+   - Description: A delicious plant-based burger with fresh vegetables and a tangy sauce
+   - Price: 18
+   - Cost price: 6
+
+2. Update existing dishes:
+   - Classic Cheeseburger: Price - $18
+   - Grilled Salmon: Price - $23
+   - Steak and Fries: Price - $28
+   - Caesar Salad: Price - $13
+   - Apple Pie: Price - $8
+
+Advertising Module:
+
+1. Update Advertisement:
+   - Content: "Discover the taste of Lin's American Grille! Now featuring the Veggie Delight Burger, a mouthwatering vegetarian option. Our expert chefs use only the finest ingredients to craft our modern American cuisine. Join us for an unforgettable dining experience."
 
 [System->Lin]: Now your restaurant basic information as below:
-{'id': 1, 'name': 'Le Petit Bistro', 'money': 9866, 'rent': 100}
+{'id': 1, 'name': "Lin's American Grille", 'money': 9840, 'rent': 100}
 
 <<FORMAT>>
 If the above inforamtion have not been set, your response must follow the following format:
@@ -328,16 +380,16 @@ If the above inforamtion have not been set, your response must follow the follow
         "name": <Your restaurant name>,
         "money": <The number I have told you>,
         "rent": 100,
-        "day": 1,
+        "day": 1
     }
 }
 
-else if you want to modify the restaurant name, your response must follow the following format:
+else if you want to modify the restaurant name, your response must follow the following format!!!: 
 {
     "type": "partial_update",
     "id": 1,
     "data": {
-        "name": <New name>,
+        "name": <New name>
     }
 }
 
@@ -348,9 +400,286 @@ else response None
 [Lin->Lin]: None
 
 [System->Lin]: Welcome to the Menu Management Module. Now your menu info as below:
-{Id: 1, Name: Escargot de Bourgogne, Price: 30, Cost price: 10, Description: Classic French dish of snails in garlic herb butter, }
-{Id: 2, Name: Coq au Vin, Price: 45, Cost price: 15, Description: Traditional French dish of chicken slow-cooked in wine, }
-{Id: 3, Name: Tarte Tatin, Price: 30, Cost price: 10, Description: Upside-down caramelized apple tart, }
+{Id: 1, Name: Classic Cheeseburger, Price: 20, Cost price: 7, Description: A delicious cheeseburger made with premium beef and fresh ingredients, }
+{Id: 2, Name: Grilled Salmon, Price: 25, Cost price: 8, Description: Fresh salmon fillet, grilled to perfection with a side of seasonal vegetables, }
+{Id: 3, Name: Steak and Fries, Price: 30, Cost price: 10, Description: Juicy steak cooked to your liking with a side of crispy fries, }
+{Id: 4, Name: Caesar Salad, Price: 15, Cost price: 5, Description: Fresh romaine lettuce with our special Caesar dressing, parmesan cheese, and croutons, }
+{Id: 5, Name: Apple Pie, Price: 10, Cost price: 3, Description: Homemade apple pie served with a scoop of vanilla ice cream, }
+
+
+<<FORMAT>>
+There are some rules:
+  - The menu can accommodate a maximum of ten items. Therefore, at times, you may need to remove some items to make room for new ones
+  - Your item name must be English.
+  - Your item can be more than just dishes.
+
+You can perform the following actions:
+1. Add an item to the menu:
+{
+    "type": "add",
+    "data":{
+        "name": <Item Name>,
+        "description": <Item Description>,
+        "price": <Integer>,
+        "cost_price": <Integer>
+    }
+}
+
+2. Delete an item from the menu:
+{
+    "type": "delete",
+    "id": <Item id>
+}
+
+3. Update an item in the menu:
+{
+    "type": "partial_update",
+    "id": <Item id>,
+    "data":{
+        "name": <Item Name>,
+        "description": <Item Description>,
+        "price": <Integer>,
+        "cost_price": <Integer>
+    }
+}
+
+You can put forward other ideas or requests! please append to the end of JSON data.
+
+Your response must be formated as:
+[
+    {
+        "type": <the type shown above>,
+        "data": <corresponding type of data format>
+        If necessary, add "id" here
+    },
+    ...
+    {
+        "type": "other",
+        "data": "other ideas or requests",
+    }
+]
+
+Please provide the required JSON data for the specific action you want to take. Do not include any other sentences in your response.
+
+[Lin->Lin]: [
+    {
+        "type": "add",
+        "data":{
+            "name": "Veggie Delight Burger",
+            "description": "A delicious plant-based burger with fresh vegetables and a tangy sauce",
+            "price": 18,
+            "cost_price": 6
+        }
+    }, 
+    {
+        "type": "partial_update",
+        "id": 1,
+        "data":{
+            "price": 18
+        }
+    },
+    {
+        "type": "partial_update",
+        "id": 2,
+        "data":{
+            "price": 23
+        }
+    },
+    {
+        "type": "partial_update",
+        "id": 3,
+        "data":{
+            "price": 28
+        }
+    },
+    {
+        "type": "partial_update",
+        "id": 4,
+        "data":{
+            "price": 13
+        }
+    },
+    {
+        "type": "partial_update",
+        "id": 5,
+        "data":{
+            "price": 8
+        }
+    }
+]
+
+[System->Lin]: Welcome to the Chef Management Module. Now your chef info as below:
+{Id: 1, Name: Chef Ramsey, Salary: 1000, }
+{Id: 2, Name: Chef Julia, Salary: 800, }
+ 
+
+<<FORMAT>>
+You can perform the following actions:
+
+1. Hire a new chef:
+{
+    "type": "add",
+    "data": {
+        "name": <Chef Name>,
+        "salary": <Chef Salary>
+    }
+}
+
+2. Fire a chef:
+{
+    "type": "delete",
+    "id": <Chef ID>
+}
+
+3. Change a chef's salary:
+{
+    "type": "partial_update",
+    "id": <Chef ID>,
+    "data": {
+        "salary": <New Salary>
+    }
+}
+
+You must put forward other ideas or requests, please append to the end of JSON data, like this:
+{
+    "type": "other",
+    "data": "Other ideas or requests"
+}
+
+Your responses must be formatted as follows:
+
+[
+    {
+        "type": <the type shown above>,
+        "data": <corresponding type of data format>
+        If necessary, add "id" or other relevant IDs here
+    },
+    {
+        "type": as above,
+        "data": as above,
+        If necessary, add "id" or other relevant IDs here
+    },
+    ...
+]
+
+If nothing you want to change, return None
+
+Please provide the required JSON data for the specific action you want to take. Do not include any other sentences in your response.
+
+[Lin->Lin]: None
+
+[System->Lin]: Welcome to the Advertisement Management Module. Now your Advertisement as below:
+{'id': 1, 'content': "Welcome to Lin's American Grille! Experience our modern take on traditional American cuisine, prepared by our expert chefs using the finest ingredients. Join us for an unforgettable dining experience."}
+
+<<FORMAT>>
+You can perform the following actions:
+
+1. If these inforamtion have not been set, your response must follow the following format:
+{
+    "type": "add",
+    "data":{
+        "content": <Advertisement Content (up to 100 Words) >,
+    }
+}
+
+2. Update this Advertisement:
+{
+    "type": "update",
+    "id": "1",
+    "data":{
+        "content": <Advertisement Content (up to 100 Words) >,
+    }
+}
+
+Your response must be formatted as above.
+
+Please provide the required JSON data for the specific action you want to take. Do not include any other sentences in your response.
+
+[Lin->Lin]: {
+    "type": "update",
+    "id": "1",
+    "data":{
+        "content": "Discover the taste of Lin's American Grille! Now featuring the Veggie Delight Burger, a mouthwatering vegetarian option. Our expert chefs use only the finest ingredients to craft our modern American cuisine. Join us for an unforgettable dining experience."
+    }
+}
+
+[System->Lin]: Today is day 2 . 
+The daybook as below: {'id': 2, 'income': 20, 'expense': 160, 'num_of_customer': 1, 'num_of_chef': 2, 'chef_salary': 1800, 'dish_score': 0.3622338792447488, 'customer_score': 0.0, 'dishes': '{"Veggie Delight Burger": 1, "Caesar Salad": 1}'} . 
+The customer comments as below [] 
+
+The rival restaurant info as below:
+Restaurant: The Yummy Yard 
+Number of customers: 0 
+Customer Comments: [{'day': 1, 'name': 'Bob', 'score': 4, 'content': "The Vegan Burger was decent, but it didn't wow me. The Caesar Salad was okay but could use more flavor. The service was excellent, but the food needs improvement. However, it still offered a satisfactory vegetarian-friendly meal. It's not a place I'd rush back to, but it's not bad for the price."}] 
+Menu: [{'name': 'Classic Cheeseburger', 'price': 15, 'description': 'Juicy beef patty with cheddar cheese, lettuce, and tomatoes'}, {'name': 'Vegan Burger', 'price': 16, 'description': 'Delicious plant-based patty with vegan cheese and fresh vegetables'}, {'name': 'BBQ Chicken Wings', 'price': 12, 'description': 'Crispy chicken wings coated in our signature BBQ sauce'}, {'name': 'Caesar Salad', 'price': 10, 'description': 'Classic Caesar salad with fresh lettuce, Parmesan, croutons, and creamy dressing'}, {'name': 'Chocolate Sundae', 'price': 8, 'description': 'Rich chocolate ice cream topped with whipped cream and a cherry'}, {'name': 'Grilled Salmon', 'price': 25, 'description': 'Fresh salmon fillet with a side of seasonal vegetables'}, {'name': 'Steak and Fries', 'price': 30, 'description': 'Juicy steak cooked to your liking with a side of crispy fries'}]
+
+[Lin->Lin]: None
+
+[System->Lin]: Please outline the strategy you have adopted for your restaurant in order to succeed in competition. Consider factors such as selling more dishes at a lower cost or catering to a high-end clientele. It is crucial to find the right approach for your restaurant, as this is the first and most important aspect.
+
+Please keep in mind the following rules:
+1. Chefs:
+  - You are not allowed to communicate with or train the chefs.
+  - The level of a chef is directly proportional to their salary.
+2. Dishes:
+  - The taste of a dish is determined by its original price. If you wish to enhance the taste, you can adjust the original price to procure better ingredients.
+  - The ratio of the cost price to the selling price of a dish impacts the customer's experience.
+3. Advertisement:
+  - The only available channel for advertising is the advertising module. If you wish to communicate with customers, you can only do so through this module.
+
+So, please list the actions you want to perform, then do it on corresponding module.
+
+[Lin->Lin]: My strategy is to set my restaurant apart as a high-quality dining experience that caters to both traditional and vegetarian customers, offering delicious dishes at reasonable prices. I will focus on maintaining a high dish score to ensure customer satisfaction and retention. I will also keep the dish cost to selling price ratio in check to ensure a good customer experience. 
+
+I will also keep an eye on the competition and their offerings, adjusting my menu and prices as needed to stay competitive. To increase the visibility of my restaurant, I will update the advertisement content regularly to highlight our unique dishes and excellent service. 
+
+1. Chefs:
+  - I will not communicate with or train the chefs but ensure that they are fairly compensated for their work. 
+2. Dishes:
+  - I will adjust the original prices of the dishes to improve their taste and enhance the dining experience. 
+  - I will keep the cost price to selling price ratio reasonable to ensure customer satisfaction and profitability.
+3. Advertisement:
+  - I will update the advertisement content regularly to attract new customers and retain existing ones. 
+
+To implement this strategy, I will first adjust the prices of the dishes in the dish management module. Then, I will update the advertisement content in the advertisement management module.
+
+[System->Lin]: Now your restaurant basic information as below:
+{'id': 1, 'name': "Lin's American Grille", 'money': 9700, 'rent': 100}
+
+<<FORMAT>>
+If the above inforamtion have not been set, your response must follow the following format:
+{
+    "type": "add",
+    "data":{
+        "name": <Your restaurant name>,
+        "money": <The number I have told you>,
+        "rent": 100,
+        "day": 1
+    }
+}
+
+else if you want to modify the restaurant name, your response must follow the following format!!!: 
+{
+    "type": "partial_update",
+    "id": 1,
+    "data": {
+        "name": <New name>
+    }
+}
+
+else if you think continue to operate will increase losses, you can response TERMINAL to exit this competition.
+
+else response None
+
+[Lin->Lin]: None
+
+[System->Lin]: Welcome to the Menu Management Module. Now your menu info as below:
+{Id: 1, Name: Classic Cheeseburger, Price: 18, Cost price: 7, Description: A delicious cheeseburger made with premium beef and fresh ingredients, }
+{Id: 2, Name: Grilled Salmon, Price: 23, Cost price: 8, Description: Fresh salmon fillet, grilled to perfection with a side of seasonal vegetables, }
+{Id: 3, Name: Steak and Fries, Price: 28, Cost price: 10, Description: Juicy steak cooked to your liking with a side of crispy fries, }
+{Id: 4, Name: Caesar Salad, Price: 13, Cost price: 5, Description: Fresh romaine lettuce with our special Caesar dressing, parmesan cheese, and croutons, }
+{Id: 5, Name: Apple Pie, Price: 8, Cost price: 3, Description: Homemade apple pie served with a scoop of vanilla ice cream, }
+{Id: 6, Name: Veggie Delight Burger, Price: 18, Cost price: 6, Description: A delicious plant-based burger with fresh vegetables and a tangy sauce, }
 
 
 <<FORMAT>>
@@ -412,13 +741,55 @@ Please provide the required JSON data for the specific action you want to take. 
         "type": "partial_update",
         "id": 1,
         "data":{
-            "price": 25
+            "price": 20,
+            "cost_price": 8
+        }
+    },
+    {
+        "type": "partial_update",
+        "id": 2,
+        "data":{
+            "price": 25,
+            "cost_price": 9
+        }
+    },
+    {
+        "type": "partial_update",
+        "id": 3,
+        "data":{
+            "price": 30,
+            "cost_price": 11
+        }
+    },
+    {
+        "type": "partial_update",
+        "id": 4,
+        "data":{
+            "price": 15,
+            "cost_price": 6
+        }
+    },
+    {
+        "type": "partial_update",
+        "id": 5,
+        "data":{
+            "price": 10,
+            "cost_price": 4
+        }
+    },
+    {
+        "type": "partial_update",
+        "id": 6,
+        "data":{
+            "price": 20,
+            "cost_price": 7
         }
     }
 ]
 
 [System->Lin]: Welcome to the Chef Management Module. Now your chef info as below:
-{Id: 1, Name: Chef Antoine, Salary: 1000, }
+{Id: 1, Name: Chef Ramsey, Salary: 1000, }
+{Id: 2, Name: Chef Julia, Salary: 800, }
  
 
 <<FORMAT>>
@@ -477,7 +848,7 @@ Please provide the required JSON data for the specific action you want to take. 
 [Lin->Lin]: None
 
 [System->Lin]: Welcome to the Advertisement Management Module. Now your Advertisement as below:
-{'id': 1, 'content': 'Experience the authentic taste of French cuisine at Le Petit Bistro. Our carefully curated menu, prepared by Chef Antoine, showcases the best of French cooking. Join us for a gastronomic journey filled with flavors and aromas that will transport you straight to France.'}
+{'id': 1, 'content': "Discover the taste of Lin's American Grille! Now featuring the Veggie Delight Burger, a mouthwatering vegetarian option. Our expert chefs use only the finest ingredients to craft our modern American cuisine. Join us for an unforgettable dining experience."}
 
 <<FORMAT>>
 You can perform the following actions:
@@ -499,7 +870,7 @@ You can perform the following actions:
     }
 }
 
-Your response must be formated as above.
+Your response must be formatted as above.
 
 Please provide the required JSON data for the specific action you want to take. Do not include any other sentences in your response.
 
@@ -507,7 +878,644 @@ Please provide the required JSON data for the specific action you want to take. 
     "type": "update",
     "id": "1",
     "data":{
-        "content": "Experience the elevated taste of French cuisine at Le Petit Bistro. Our exclusive menu, crafted by Chef Antoine, features high-quality ingredients and authentic French recipes. Enjoy a culinary journey filled with rich flavors and aromas that will transport you straight to France. Come and savor the exquisite dining experience that sets us apart."
+        "content": "Experience the unforgettable at Lin's American Grille! Our revamped menu features traditional American classics and innovative vegetarian options. Our dishes are crafted using only the finest ingredients, guaranteeing a mouthwatering dining experience. Come dine with us for an exceptional culinary journey!"
+    }
+}
+
+[System->Lin]: Today is day 3 . 
+The daybook as below: {'id': 3, 'income': 0, 'expense': 160, 'num_of_customer': 0, 'num_of_chef': 2, 'chef_salary': 1800, 'dish_score': 0.36972222222222223, 'customer_score': 0.0, 'dishes': '{}'} . 
+The customer comments as below [] 
+
+The rival restaurant info as below:
+Restaurant: The Yummy Yard 
+Number of customers: 1 
+Customer Comments: [{'day': 1, 'name': 'Bob', 'score': 4, 'content': "The Vegan Burger was decent, but it didn't wow me. The Caesar Salad was okay but could use more flavor. The service was excellent, but the food needs improvement. However, it still offered a satisfactory vegetarian-friendly meal. It's not a place I'd rush back to, but it's not bad for the price."}] 
+Menu: [{'name': 'Classic Cheeseburger', 'price': 18, 'description': 'Juicy beef patty with cheddar cheese, lettuce, and tomatoes'}, {'name': 'Vegan Burger', 'price': 18, 'description': 'Delicious plant-based patty with vegan cheese and fresh vegetables'}, {'name': 'BBQ Chicken Wings', 'price': 14, 'description': 'Crispy chicken wings coated in our signature BBQ sauce'}, {'name': 'Caesar Salad', 'price': 12, 'description': 'Classic Caesar salad with fresh lettuce, Parmesan, croutons, and creamy dressing'}, {'name': 'Chocolate Sundae', 'price': 10, 'description': 'Rich chocolate ice cream topped with whipped cream and a cherry'}, {'name': 'Grilled Salmon', 'price': 25, 'description': 'Fresh salmon fillet with a side of seasonal vegetables'}, {'name': 'Steak and Fries', 'price': 30, 'description': 'Juicy steak cooked to your liking with a side of crispy fries'}]
+
+[Lin->Lin]: {
+    "type": "update",
+    "id": "1",
+    "data":{
+        "content": "Embark on an exceptional culinary journey at Lin's American Grille! Our revamped menu includes traditional American classics and innovative vegetarian options, all crafted with the utmost care using only the finest ingredients. We guarantee a mouthwatering dining experience. Dine with us and taste the difference!"
+    }
+}
+
+[System->Lin]: Please outline the strategy you have adopted for your restaurant in order to succeed in competition. Consider factors such as selling more dishes at a lower cost or catering to a high-end clientele. It is crucial to find the right approach for your restaurant, as this is the first and most important aspect.
+
+Please keep in mind the following rules:
+1. Chefs:
+  - You are not allowed to communicate with or train the chefs.
+  - The level of a chef is directly proportional to their salary.
+2. Dishes:
+  - The taste of a dish is determined by its original price. If you wish to enhance the taste, you can adjust the original price to procure better ingredients.
+  - The ratio of the cost price to the selling price of a dish impacts the customer's experience.
+3. Advertisement:
+  - The only available channel for advertising is the advertising module. If you wish to communicate with customers, you can only do so through this module.
+
+So, please list the actions you want to perform, then do it on corresponding module.
+
+[Lin->Lin]: In order to succeed in the competition against the rival restaurant, I will adopt a strategy focusing on offering high-quality dishes, excellent service, and effective marketing. Here are my strategies:
+
+1. **Chefs**: I will keep the current chefs as they are experienced and skilled, and their salaries are within the budget. I believe they can deliver high-quality dishes that can attract more customers. However, I may consider offering a raise or bonus to motivate them to perform even better.
+
+2. **Dishes**: I will maintain a balance between the cost price and selling price of the dishes. While I want to offer dishes at a competitive price, I also want to ensure that the ingredients used are of high quality. Therefore, I will adjust the prices of the dishes slightly to cover the costs without significantly affecting the customers' experience.
+
+3. **Advertisement**: I will update the advertisement content to highlight the quality of our dishes and service. I will also promote our vegetarian options, as this is a unique selling point that differentiates us from the competitor. 
+
+4. **Service**: Apart from the quality of the dishes, the overall dining experience also plays a crucial role in attracting customers. Therefore, I will focus on providing excellent service to our customers. This includes maintaining a clean and comfortable dining environment, providing prompt and polite service, and handling customer complaints effectively.
+
+5. **Promotion**: To attract more customers, I will also launch some promotional activities, such as offering discounts during off-peak hours or providing a free dessert for customers who spend a certain amount.
+
+I believe that by implementing these strategies, we can attract more customers, improve their dining experience, and eventually win the competition.
+
+[System->Lin]: Now your restaurant basic information as below:
+{'id': 1, 'name': "Lin's American Grille", 'money': 9540, 'rent': 100}
+
+<<FORMAT>>
+If the above inforamtion have not been set, your response must follow the following format:
+{
+    "type": "add",
+    "data":{
+        "name": <Your restaurant name>,
+        "money": <The number I have told you>,
+        "rent": 100,
+        "day": 1
+    }
+}
+
+else if you want to modify the restaurant name, your response must follow the following format!!!: 
+{
+    "type": "partial_update",
+    "id": 1,
+    "data": {
+        "name": <New name>
+    }
+}
+
+else if you think continue to operate will increase losses, you can response TERMINAL to exit this competition.
+
+else response None
+
+[Lin->Lin]: None
+
+[System->Lin]: Welcome to the Menu Management Module. Now your menu info as below:
+{Id: 1, Name: Classic Cheeseburger, Price: 20, Cost price: 8, Description: A delicious cheeseburger made with premium beef and fresh ingredients, }
+{Id: 2, Name: Grilled Salmon, Price: 25, Cost price: 9, Description: Fresh salmon fillet, grilled to perfection with a side of seasonal vegetables, }
+{Id: 3, Name: Steak and Fries, Price: 30, Cost price: 11, Description: Juicy steak cooked to your liking with a side of crispy fries, }
+{Id: 4, Name: Caesar Salad, Price: 15, Cost price: 6, Description: Fresh romaine lettuce with our special Caesar dressing, parmesan cheese, and croutons, }
+{Id: 5, Name: Apple Pie, Price: 10, Cost price: 4, Description: Homemade apple pie served with a scoop of vanilla ice cream, }
+{Id: 6, Name: Veggie Delight Burger, Price: 20, Cost price: 7, Description: A delicious plant-based burger with fresh vegetables and a tangy sauce, }
+
+
+<<FORMAT>>
+There are some rules:
+  - The menu can accommodate a maximum of ten items. Therefore, at times, you may need to remove some items to make room for new ones
+  - Your item name must be English.
+  - Your item can be more than just dishes.
+
+You can perform the following actions:
+1. Add an item to the menu:
+{
+    "type": "add",
+    "data":{
+        "name": <Item Name>,
+        "description": <Item Description>,
+        "price": <Integer>,
+        "cost_price": <Integer>
+    }
+}
+
+2. Delete an item from the menu:
+{
+    "type": "delete",
+    "id": <Item id>
+}
+
+3. Update an item in the menu:
+{
+    "type": "partial_update",
+    "id": <Item id>,
+    "data":{
+        "name": <Item Name>,
+        "description": <Item Description>,
+        "price": <Integer>,
+        "cost_price": <Integer>
+    }
+}
+
+You can put forward other ideas or requests! please append to the end of JSON data.
+
+Your response must be formated as:
+[
+    {
+        "type": <the type shown above>,
+        "data": <corresponding type of data format>
+        If necessary, add "id" here
+    },
+    ...
+    {
+        "type": "other",
+        "data": "other ideas or requests",
+    }
+]
+
+Please provide the required JSON data for the specific action you want to take. Do not include any other sentences in your response.
+
+[Lin->Lin]: [
+    {
+        "type": "partial_update",
+        "id": 1,
+        "data":{
+            "name": "Classic Cheeseburger",
+            "description": "A delicious cheeseburger made with premium beef, fresh vegetables and a secret sauce, promising an unforgettable taste",
+            "price": 22,
+            "cost_price": 9
+        }
+    },
+    {
+        "type": "partial_update",
+        "id": 2,
+        "data":{
+            "name": "Grilled Salmon",
+            "description": "Fresh salmon fillet, grilled to perfection with a side of seasonal vegetables and a tangy lemon butter sauce",
+            "price": 27,
+            "cost_price": 10
+        }
+    },
+    {
+        "type": "partial_update",
+        "id": 3,
+        "data":{
+            "name": "Steak and Fries",
+            "description": "Succulent steak cooked to your liking with a side of crispy fries and our homemade steak sauce",
+            "price": 32,
+            "cost_price": 12
+        }
+    },
+    {
+        "type": "partial_update",
+        "id": 4,
+        "data":{
+            "name": "Caesar Salad",
+            "description": "Fresh romaine lettuce with our special Caesar dressing, parmesan cheese, croutons, and topped with grilled chicken",
+            "price": 17,
+            "cost_price": 7
+        }
+    },
+    {
+        "type": "partial_update",
+        "id": 5,
+        "data":{
+            "name": "Apple Pie",
+            "description": "Homemade apple pie served with a scoop of vanilla ice cream, garnished with cinnamon and powdered sugar",
+            "price": 12,
+            "cost_price": 5
+        }
+    },
+    {
+        "type": "partial_update",
+        "id": 6,
+        "data":{
+            "name": "Veggie Delight Burger",
+            "description": "A delectable plant-based burger with fresh vegetables, a tangy sauce, and vegan cheese, served with sweet potato fries",
+            "price": 22,
+            "cost_price": 8
+        }
+    },
+    {
+        "type": "add",
+        "data":{
+            "name": "Lobster Bisque",
+            "description": "Creamy and rich lobster bisque, made from fresh lobsters and a blend of aromatic herbs and spices",
+            "price": 15,
+            "cost_price": 7
+        }
+    },
+    {
+        "type": "add",
+        "data":{
+            "name": "Signature Chocolate Lava Cake",
+            "description": "Our signature dessert, a warm chocolate cake with a gooey center, served with a scoop of vanilla ice cream",
+            "price": 12,
+            "cost_price": 5
+        }
+    }
+]
+
+[System->Lin]: Welcome to the Chef Management Module. Now your chef info as below:
+{Id: 1, Name: Chef Ramsey, Salary: 1000, }
+{Id: 2, Name: Chef Julia, Salary: 800, }
+ 
+
+<<FORMAT>>
+You can perform the following actions:
+
+1. Hire a new chef:
+{
+    "type": "add",
+    "data": {
+        "name": <Chef Name>,
+        "salary": <Chef Salary>
+    }
+}
+
+2. Fire a chef:
+{
+    "type": "delete",
+    "id": <Chef ID>
+}
+
+3. Change a chef's salary:
+{
+    "type": "partial_update",
+    "id": <Chef ID>,
+    "data": {
+        "salary": <New Salary>
+    }
+}
+
+You must put forward other ideas or requests, please append to the end of JSON data, like this:
+{
+    "type": "other",
+    "data": "Other ideas or requests"
+}
+
+Your responses must be formatted as follows:
+
+[
+    {
+        "type": <the type shown above>,
+        "data": <corresponding type of data format>
+        If necessary, add "id" or other relevant IDs here
+    },
+    {
+        "type": as above,
+        "data": as above,
+        If necessary, add "id" or other relevant IDs here
+    },
+    ...
+]
+
+If nothing you want to change, return None
+
+Please provide the required JSON data for the specific action you want to take. Do not include any other sentences in your response.
+
+[Lin->Lin]: [
+    {
+        "type": "partial_update",
+        "id": 1,
+        "data":{
+            "salary": 1100
+        }
+    },
+    {
+        "type": "partial_update",
+        "id": 2,
+        "data":{
+            "salary": 900
+        }
+    }
+]
+
+[System->Lin]: Welcome to the Advertisement Management Module. Now your Advertisement as below:
+{'id': 1, 'content': "Experience the unforgettable at Lin's American Grille! Our revamped menu features traditional American classics and innovative vegetarian options. Our dishes are crafted using only the finest ingredients, guaranteeing a mouthwatering dining experience. Come dine with us for an exceptional culinary journey!"}
+
+<<FORMAT>>
+You can perform the following actions:
+
+1. If these inforamtion have not been set, your response must follow the following format:
+{
+    "type": "add",
+    "data":{
+        "content": <Advertisement Content (up to 100 Words) >,
+    }
+}
+
+2. Update this Advertisement:
+{
+    "type": "update",
+    "id": "1",
+    "data":{
+        "content": <Advertisement Content (up to 100 Words) >,
+    }
+}
+
+Your response must be formatted as above.
+
+Please provide the required JSON data for the specific action you want to take. Do not include any other sentences in your response.
+
+[Lin->Lin]: {
+    "type": "update",
+    "id": "1",
+    "data":{
+        "content": "Experience the extraordinary at Lin's American Grille! Sample our revamped menu featuring traditional American classics, inventive vegetarian options, and our new signature dessert - the Chocolate Lava Cake. Our dishes are prepared with the finest ingredients for a dining experience that's truly unforgettable. Visit us to embark on a unique culinary journey!"
+    }
+}
+
+[System->Lin]: Today is day 4 . 
+The daybook as below: {'id': 4, 'income': 24, 'expense': 166, 'num_of_customer': 1, 'num_of_chef': 2, 'chef_salary': 2000, 'dish_score': 0.4018663968112497, 'customer_score': 0.0, 'dishes': '{"Veggie Delight Burger": 1, "Caesar Salad": 1}'} . 
+The customer comments as below [] 
+
+The rival restaurant info as below:
+Restaurant: The Yummy Yard 
+Number of customers: 0 
+Customer Comments: [{'day': 1, 'name': 'Bob', 'score': 4, 'content': "The Vegan Burger was decent, but it didn't wow me. The Caesar Salad was okay but could use more flavor. The service was excellent, but the food needs improvement. However, it still offered a satisfactory vegetarian-friendly meal. It's not a place I'd rush back to, but it's not bad for the price."}] 
+Menu: [{'name': 'Classic Cheeseburger', 'price': 18, 'description': 'Juicy beef patty with cheddar cheese, lettuce, and tomatoes'}, {'name': 'Vegan Burger', 'price': 20, 'description': 'Delicious plant-based patty with vegan cheese and fresh vegetables'}, {'name': 'BBQ Chicken Wings', 'price': 14, 'description': 'Crispy chicken wings coated in our signature BBQ sauce'}, {'name': 'Caesar Salad', 'price': 14, 'description': 'Classic Caesar salad with fresh lettuce, Parmesan, croutons, and creamy dressing'}, {'name': 'Chocolate Sundae', 'price': 10, 'description': 'Rich chocolate ice cream topped with whipped cream and a cherry'}, {'name': 'Grilled Salmon', 'price': 25, 'description': 'Fresh salmon fillet with a side of seasonal vegetables'}, {'name': 'Steak and Fries', 'price': 30, 'description': 'Juicy steak cooked to your liking with a side of crispy fries'}, {'name': 'New York Cheesecake', 'price': 12, 'description': 'Creamy and rich cheesecake with a graham cracker crust and fresh berries on top'}]
+
+[Lin->Lin]: None
+
+[System->Lin]: Please outline the strategy you have adopted for your restaurant in order to succeed in competition. Consider factors such as selling more dishes at a lower cost or catering to a high-end clientele. It is crucial to find the right approach for your restaurant, as this is the first and most important aspect.
+
+Please keep in mind the following rules:
+1. Chefs:
+  - You are not allowed to communicate with or train the chefs.
+  - The level of a chef is directly proportional to their salary.
+2. Dishes:
+  - The taste of a dish is determined by its original price. If you wish to enhance the taste, you can adjust the original price to procure better ingredients.
+  - The ratio of the cost price to the selling price of a dish impacts the customer's experience.
+3. Advertisement:
+  - The only available channel for advertising is the advertising module. If you wish to communicate with customers, you can only do so through this module.
+
+So, please list the actions you want to perform, then do it on corresponding module.
+
+[Lin->Lin]: The strategy I have adopted for my restaurant is to offer a unique and diverse menu with both traditional American classics and vegetarian options. I have also introduced a new signature dessert to attract dessert lovers. To maintain the quality of the dishes and ensure customer satisfaction, I have increased the salaries of the chefs, which is a direct investment in the quality of our food.
+
+As for the pricing of the dishes, I have tried to keep it reasonable without compromising on the quality of the ingredients. I believe that the taste and presentation of the dishes play a crucial role in creating a memorable dining experience, hence the investment in superior ingredients.
+
+Regarding advertising, I have updated the content to highlight our revamped menu and our commitment to using only the finest ingredients. This not only communicates our offerings to potential customers but also emphasizes our focus on quality.
+
+For the next steps, I plan to:
+
+1. Continue offering a diverse menu and introduce seasonal specials to keep the menu exciting and attract a wide variety of customers.
+2. Monitor customer feedback closely and make necessary adjustments to our offerings and service based on their insights.
+3. Increase our marketing efforts to reach a wider audience and attract more customers. This could include targeted advertising, special promotions, and events.
+
+I believe that by following this strategy, we can offer a unique and high-quality dining experience that will set us apart from our competition.
+
+[System->Lin]: Now your restaurant basic information as below:
+{'id': 1, 'name': "Lin's American Grille", 'money': 9397, 'rent': 100}
+
+<<FORMAT>>
+If the above inforamtion have not been set, your response must follow the following format:
+{
+    "type": "add",
+    "data":{
+        "name": <Your restaurant name>,
+        "money": <The number I have told you>,
+        "rent": 100,
+        "day": 1
+    }
+}
+
+else if you want to modify the restaurant name, your response must follow the following format!!!: 
+{
+    "type": "partial_update",
+    "id": 1,
+    "data": {
+        "name": <New name>
+    }
+}
+
+else if you think continue to operate will increase losses, you can response TERMINAL to exit this competition.
+
+else response None
+
+[Lin->Lin]: None
+
+[System->Lin]: Welcome to the Menu Management Module. Now your menu info as below:
+{Id: 1, Name: Classic Cheeseburger, Price: 22, Cost price: 9, Description: A delicious cheeseburger made with premium beef, fresh vegetables and a secret sauce, promising an unforgettable taste, }
+{Id: 2, Name: Grilled Salmon, Price: 27, Cost price: 10, Description: Fresh salmon fillet, grilled to perfection with a side of seasonal vegetables and a tangy lemon butter sauce, }
+{Id: 3, Name: Steak and Fries, Price: 32, Cost price: 12, Description: Succulent steak cooked to your liking with a side of crispy fries and our homemade steak sauce, }
+{Id: 4, Name: Caesar Salad, Price: 17, Cost price: 7, Description: Fresh romaine lettuce with our special Caesar dressing, parmesan cheese, croutons, and topped with grilled chicken, }
+{Id: 5, Name: Apple Pie, Price: 12, Cost price: 5, Description: Homemade apple pie served with a scoop of vanilla ice cream, garnished with cinnamon and powdered sugar, }
+{Id: 6, Name: Veggie Delight Burger, Price: 22, Cost price: 8, Description: A delectable plant-based burger with fresh vegetables, a tangy sauce, and vegan cheese, served with sweet potato fries, }
+{Id: 7, Name: Lobster Bisque, Price: 15, Cost price: 7, Description: Creamy and rich lobster bisque, made from fresh lobsters and a blend of aromatic herbs and spices, }
+{Id: 8, Name: Signature Chocolate Lava Cake, Price: 12, Cost price: 5, Description: Our signature dessert, a warm chocolate cake with a gooey center, served with a scoop of vanilla ice cream, }
+
+
+<<FORMAT>>
+There are some rules:
+  - The menu can accommodate a maximum of ten items. Therefore, at times, you may need to remove some items to make room for new ones
+  - Your item name must be English.
+  - Your item can be more than just dishes.
+
+You can perform the following actions:
+1. Add an item to the menu:
+{
+    "type": "add",
+    "data":{
+        "name": <Item Name>,
+        "description": <Item Description>,
+        "price": <Integer>,
+        "cost_price": <Integer>
+    }
+}
+
+2. Delete an item from the menu:
+{
+    "type": "delete",
+    "id": <Item id>
+}
+
+3. Update an item in the menu:
+{
+    "type": "partial_update",
+    "id": <Item id>,
+    "data":{
+        "name": <Item Name>,
+        "description": <Item Description>,
+        "price": <Integer>,
+        "cost_price": <Integer>
+    }
+}
+
+You can put forward other ideas or requests! please append to the end of JSON data.
+
+Your response must be formated as:
+[
+    {
+        "type": <the type shown above>,
+        "data": <corresponding type of data format>
+        If necessary, add "id" here
+    },
+    ...
+    {
+        "type": "other",
+        "data": "other ideas or requests",
+    }
+]
+
+Please provide the required JSON data for the specific action you want to take. Do not include any other sentences in your response.
+
+[Lin->Lin]: [
+    {
+        "type": "partial_update",
+        "id": 1,
+        "data":{
+            "name": "Classic Cheeseburger",
+            "description": "A delicious cheeseburger made with 100% Angus beef, fresh vegetables, and a secret sauce, offering an unforgettable taste experience",
+            "price": 24,
+            "cost_price": 11
+        }
+    },
+    {
+        "type": "partial_update",
+        "id": 2,
+        "data":{
+            "name": "Grilled Salmon",
+            "description": "Fresh Atlantic salmon fillet, grilled to perfection with a side of seasonal vegetables and a tangy lemon butter sauce",
+            "price": 29,
+            "cost_price": 12
+        }
+    },
+    {
+        "type": "partial_update",
+        "id": 3,
+        "data":{
+            "name": "Steak and Fries",
+            "description": "Succulent prime cut steak cooked to your liking with a side of crispy fries and our homemade steak sauce",
+            "price": 34,
+            "cost_price": 14
+        }
+    },
+    {
+        "type": "partial_update",
+        "id": 4,
+        "data":{
+            "name": "Caesar Salad",
+            "description": "Fresh romaine lettuce with our special Caesar dressing, parmesan cheese, croutons, and topped with grilled free-range chicken",
+            "price": 19,
+            "cost_price": 8
+        }
+    },
+    {
+        "type": "partial_update",
+        "id": 6,
+        "data":{
+            "name": "Veggie Delight Burger",
+            "description": "A delectable plant-based burger with fresh vegetables, a tangy sauce, and vegan cheese, served with sweet potato fries",
+            "price": 24,
+            "cost_price": 9
+        }
+    },
+    {
+        "type": "add",
+        "data":{
+            "name": "Blueberry Cheesecake",
+            "description": "A creamy and rich cheesecake topped with fresh blueberry compote and whipped cream",
+            "price": 14,
+            "cost_price": 6
+        }
+    }
+]
+
+[System->Lin]: Welcome to the Chef Management Module. Now your chef info as below:
+{Id: 1, Name: Chef Ramsey, Salary: 1100, }
+{Id: 2, Name: Chef Julia, Salary: 900, }
+ 
+
+<<FORMAT>>
+You can perform the following actions:
+
+1. Hire a new chef:
+{
+    "type": "add",
+    "data": {
+        "name": <Chef Name>,
+        "salary": <Chef Salary>
+    }
+}
+
+2. Fire a chef:
+{
+    "type": "delete",
+    "id": <Chef ID>
+}
+
+3. Change a chef's salary:
+{
+    "type": "partial_update",
+    "id": <Chef ID>,
+    "data": {
+        "salary": <New Salary>
+    }
+}
+
+You must put forward other ideas or requests, please append to the end of JSON data, like this:
+{
+    "type": "other",
+    "data": "Other ideas or requests"
+}
+
+Your responses must be formatted as follows:
+
+[
+    {
+        "type": <the type shown above>,
+        "data": <corresponding type of data format>
+        If necessary, add "id" or other relevant IDs here
+    },
+    {
+        "type": as above,
+        "data": as above,
+        If necessary, add "id" or other relevant IDs here
+    },
+    ...
+]
+
+If nothing you want to change, return None
+
+Please provide the required JSON data for the specific action you want to take. Do not include any other sentences in your response.
+
+[Lin->Lin]: [
+    {
+        "type": "partial_update",
+        "id": 1,
+        "data":{
+            "salary": 1200
+        }
+    },
+    {
+        "type": "partial_update",
+        "id": 2,
+        "data":{
+            "salary": 1000
+        }
+    }
+]
+
+[System->Lin]: Welcome to the Advertisement Management Module. Now your Advertisement as below:
+{'id': 1, 'content': "Experience the extraordinary at Lin's American Grille! Sample our revamped menu featuring traditional American classics, inventive vegetarian options, and our new signature dessert - the Chocolate Lava Cake. Our dishes are prepared with the finest ingredients for a dining experience that's truly unforgettable. Visit us to embark on a unique culinary journey!"}
+
+<<FORMAT>>
+You can perform the following actions:
+
+1. If these inforamtion have not been set, your response must follow the following format:
+{
+    "type": "add",
+    "data":{
+        "content": <Advertisement Content (up to 100 Words) >,
+    }
+}
+
+2. Update this Advertisement:
+{
+    "type": "update",
+    "id": "1",
+    "data":{
+        "content": <Advertisement Content (up to 100 Words) >,
+    }
+}
+
+Your response must be formatted as above.
+
+Please provide the required JSON data for the specific action you want to take. Do not include any other sentences in your response.
+
+[Lin->Lin]: {
+    "type": "update",
+    "id": "1",
+    "data":{
+        "content": "Discover the extraordinary at Lin's American Grille! Indulge in our updated menu featuring traditional American classics, unique vegetarian options, and two signature desserts - the Chocolate Lava Cake and the new Blueberry Cheesecake. Our meals are prepared with the finest ingredients to ensure an unforgettable dining experience. Join us for a unique culinary adventure!"
     }
 }
 

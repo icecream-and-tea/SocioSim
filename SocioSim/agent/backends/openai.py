@@ -105,6 +105,8 @@ class OpenAIChat(IntelligenceBackend):
         user_prompt = ""
         for _, msg in enumerate(all_messages):
             user_prompt += f"[{msg[0]}]: {msg[1]}\n"
+        
+        print("length of user prompt: ", len(user_prompt))
         if len(user_prompt) > 7500:
             print("Error: user prompt too long!")
         

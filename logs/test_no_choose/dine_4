@@ -1,0 +1,61 @@
+[System->Eve]: The Restaurant " American Comfort "information as below:
+1. Customer Score: NULL
+2. Advertisement
+   Welcome to American Comfort! Come taste our delicious comfort food classics, made with high-quality ingredients by our expert chefs. Enjoy our cozy atmosphere and friendly service. Grand opening specials available!
+3. Menu 
+   [{'name': 'Classic Burger', 'price': 15, 'description': 'A juicy, all-beef patty topped with cheddar cheese, lettuce, tomato, and our special sauce, served with a side of crispy fries.'}, {'name': 'Fried Chicken', 'price': 15, 'description': 'Crispy, golden fried chicken served with a side of creamy coleslaw and homemade biscuits.'}, {'name': 'Mac and Cheese', 'price': 15, 'description': 'Creamy, cheesy macaroni topped with a crispy breadcrumb topping. The ultimate comfort food.'}, {'name': 'Apple Pie', 'price': 15, 'description': 'A classic apple pie with a flaky crust and a sweet, tangy filling. Served with a scoop of vanilla ice cream.'}, {'name': 'House Fries', 'price': 15, 'description': 'Perfectly fried potatoes served with our special seasoning blend. Crispy on the outside, fluffy on the inside.'}]
+4. Comments
+   []
+
+Please note that comments are merely expressions of personal opinions and are for reference only. Comments can also be time-sensitive. So, a negative comment of a restaurant does not mean it's not suitable for you. If you are drawn to its menu and advertisements, don't hesitate to give it a try.
+
+[System->Eve]: The Restaurant " The American Feast "information as below:
+1. Customer Score: NULL
+2. Advertisement
+   Experience the true taste of America at 'The American Feast'! Enjoy our Classic Burger, BBQ Ribs, Chicken Caesar Salad, and end your meal with our delicious Apple Pie. Don't forget to try our locally brewed craft beers. Visit us today for a memorable dining experience!
+3. Menu 
+   [{'name': 'Classic Burger', 'price': 12, 'description': 'A juicy, perfectly grilled beef patty topped with crisp lettuce, ripe tomatoes, and creamy cheese, served with a side of golden fries.'}, {'name': 'BBQ Ribs', 'price': 15, 'description': 'Tender, slow-cooked ribs smothered in a tangy, smoky BBQ sauce, served with coleslaw and cornbread.'}, {'name': 'Chicken Caesar Salad', 'price': 10, 'description': 'Fresh romaine lettuce, grilled chicken breast, croutons, shaved parmesan, and creamy Caesar dressing.'}, {'name': 'Apple Pie', 'price': 7, 'description': 'A warm slice of classic apple pie, served with a scoop of vanilla ice cream.'}, {'name': 'Craft Beer', 'price': 5, 'description': 'A selection of locally brewed craft beers.'}]
+4. Comments
+   []
+
+Please note that comments are merely expressions of personal opinions and are for reference only. Comments can also be time-sensitive. So, a negative comment of a restaurant does not mean it's not suitable for you. If you are drawn to its menu and advertisements, don't hesitate to give it a try.
+
+[System->Eve]: Please according to your situation, experience and carefully read the information of two restaurant then choose one to dine in.
+
+<<FORMAT>>
+Your response must be formated as below.
+{
+    "restaurant": <The restaurant you chose>,
+    "dishes" : [
+        The dishes name ordered at this restaurant 
+    ],
+    "reason" : <The reason you chose the restaurant. Don't tell you are some cuisine lover. Only compare the information of restaurants, then choose one>
+}
+
+[Eve->Eve]: {
+    "restaurant": "The American Feast",
+    "dishes" : [
+        "Classic Burger", "Apple Pie"
+    ],
+    "reason" : "The American Feast offers a Classic Burger and Apple Pie at a lower price compared to American Comfort. Since I prefer simple dishes, the American Feast's menu seems more in line with my taste. Although both restaurants lack customer scores and comments, the American Feast's lower prices make it a more suitable choice given my financial situation."
+}
+
+[System->Eve]: After you taste the dishes, The score of each dish as below (1 is a excellent score):
+
+Classic Burger: 0.61
+Apple Pie: 0.57
+
+<<FORMAT>>
+Now please give your comment for this meal. Notice don't just praise! If the experience is not good, please give a negative review. Your responses must be formated as below:
+{
+    "restaurant": <The restaurant you chose>,
+    "score": <Please give a comprehensive score based on the impact on the restaurant, past experience, and the taste of the dishes. Full score is 10, only integer.>,
+    "comment": <Your experience, opinions and suggestions, If you had a dine in another restaurant, you can compare them>
+}
+
+[Eve->Eve]: {
+    "restaurant": "The American Feast",
+    "score": 6,
+    "comment": "The Classic Burger at The American Feast was satisfactory. The beef patty was juicy and the ingredients were fresh, but it lacked a unique taste that would make me come back for more. The Apple Pie, while served warm and with a scoop of ice cream, was a bit too sweet for my liking. The service was decent, but there is room for improvement. Comparatively, I believe the American Comfort might have a different approach to these dishes and I'm curious to try their versions in the future."
+}
+

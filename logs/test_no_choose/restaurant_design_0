@@ -1,0 +1,298 @@
+[Qin->Qin]: To start, I would name my restaurant "American Comfort" to convey the warm, inviting atmosphere and familiar, hearty fare we offer. I would then allocate the initial funds as follows:
+
+1. Staff: $3000 - This is crucial for the restaurant's daily operations. I would hire a competent team including a head chef, sous chef, waitstaff, and cleaning staff. I would ensure that they are all well-trained, motivated, and customer-oriented.
+
+2. Ingredients: $4000 - Quality ingredients are the heart of a successful restaurant. I would source locally where possible to ensure freshness and support local businesses. I would also make sure to have a variety of options to cater to different dietary needs and preferences.
+
+3. Infrastructure: $2000 - A pleasant and comfortable environment is necessary to make the customers feel welcome. I would invest in comfortable seating, good lighting, and a clean, efficient kitchen.
+
+4. Advertising: $1000 - To get the word out about the restaurant, I would invest in various forms of advertising, such as local newspapers, social media, and flyers.
+
+In the following days, I would monitor the performance of the restaurant closely. If the restaurant is doing well and the feedback is positive, I would continue on the same path. If any problems arise, I would take corrective action immediately.
+
+I would also keep a close eye on my competitor. If they introduce a new dish that is well-received, I would consider adding a similar dish to my menu, but with a unique twist to make it stand out. 
+
+In terms of pricing, I would aim to be competitive without compromising on quality. I would also consider introducing special offers, such as a discount for senior citizens, a weekday lunch deal, or a special weekend brunch menu.
+
+Finally, I would make sure to foster a sense of community around the restaurant. I would host events, support local charities, and build relationships with customers. This would not only help to attract more customers, but also build customer loyalty, which is crucial for the long-term success of the restaurant.
+
+[System->Qin]: Please outline the strategy you have adopted for your restaurant in order to succeed in competition. Consider factors such as selling more dishes at a lower cost or catering to a high-end clientele. It is crucial to find the right approach for your restaurant, as this is the first and most important aspect.
+
+Please keep in mind the following rules:
+1. Chefs:
+  - You are not allowed to communicate with or train the chefs.
+  - The level of a chef is directly proportional to their salary.
+2. Dishes:
+  - The taste of a dish is determined by its original price. If you wish to enhance the taste, you can adjust the original price to procure better ingredients.
+  - The ratio of the cost price to the selling price of a dish impacts the customer's experience.
+3. Advertisement:
+  - The only available channel for advertising is the advertising module. If you wish to communicate with customers, you can only do so through this module.
+
+So, please list the actions you want to perform, then do it on corresponding module.
+
+[Qin->Qin]: In light of these rules, my strategy would be as follows:
+
+1. Chefs: I will hire a competent head chef with a salary that balances their level of expertise with the restaurant's financial capabilities. While I cannot train or communicate with the chefs, I can ensure their satisfaction and motivation by creating a positive work environment and offering competitive salaries.
+
+2. Dishes: I would focus on a select few dishes that can be prepared well with high-quality ingredients and sold at a reasonable price. The dishes would be comfort food classics, which would appeal to a wide range of customers. I would adjust the original price as needed to enhance the taste and customer experience, without making the dishes overly expensive.
+
+3. Advertising: I would use the advertising module to communicate with customers about our special offers, new dishes, and events. I would also highlight the quality of our ingredients and the expertise of our chefs. 
+
+Action Plan:
+
+- Hire a head chef with a salary of $1500, and a sous chef with a salary of $1000.
+- Create a menu with 5 dishes, each with an original price of $10. These dishes would be comfort food classics, like burgers, fries, fried chicken, mac and cheese, and apple pie.
+- Use the advertising module to launch a campaign promoting the grand opening of the restaurant, highlighting our delicious menu, comfortable atmosphere, and friendly staff. The budget for this campaign would be $1000.
+- Set the selling price of each dish at $15, offering a fair price for high-quality food.
+- Monitor the customer feedback and sales closely, and adjust the menu, pricing, and advertising as needed.
+
+[System->Qin]: Now your restaurant basic information as below:
+<INPUT 0>
+
+<<FORMAT>>
+If the above inforamtion have not been set, your response must follow the following format:
+{
+    "type": "add",
+    "data":{
+        "name": <Your restaurant name>,
+        "money": <The number I have told you>,
+        "rent": 100,
+        "day": 1
+    }
+}
+
+else if you want to modify the restaurant name, your response must follow the following format:
+{
+    "type": "partial_update",
+    "id": 1,
+    "data": {
+        "name": <New name>
+    }
+}
+
+else if you think continue to operate will increase losses, you can response TERMINAL to exit this competition.
+
+else response None
+
+[Qin->Qin]: {
+    "type": "add",
+    "data":{
+        "name": "American Comfort",
+        "money": 10000,
+        "rent": 100,
+        "day": 1
+    }
+}
+
+[System->Qin]: Welcome to the Menu Management Module. Now your menu info as below:
+
+
+<<FORMAT>>
+There are some rules:
+  - The menu can accommodate a maximum of ten items. Therefore, at times, you may need to remove some items to make room for new ones
+  - Your item name must be English.
+  - Your item can be more than just dishes.
+
+You can perform the following actions:
+1. Add an item to the menu:
+{
+    "type": "add",
+    "data":{
+        "name": <Item Name>,
+        "description": <Item Description>,
+        "price": <Integer>,
+        "cost_price": <Integer>
+    }
+}
+
+2. Delete an item from the menu:
+{
+    "type": "delete",
+    "id": <Item id>
+}
+
+3. Update an item in the menu:
+{
+    "type": "partial_update",
+    "id": <Item id>,
+    "data":{
+        "name": <Item Name>,
+        "description": <Item Description>,
+        "price": <Integer>,
+        "cost_price": <Integer>
+    }
+}
+
+You can put forward other ideas or requests! please append to the end of JSON data.
+
+Your response must be formated as:
+[
+    {
+        "type": <the type shown above>,
+        "data": <corresponding type of data format>
+        If necessary, add "id" here
+    },
+    ...
+    {
+        "type": "other",
+        "data": "other ideas or requests",
+    }
+]
+
+Please provide the required JSON data for the specific action you want to take. Do not include any other sentences in your response.
+
+[Qin->Qin]: [
+    {
+        "type": "add",
+        "data":{
+            "name": "Classic Burger",
+            "description": "A juicy, all-beef patty topped with cheddar cheese, lettuce, tomato, and our special sauce, served with a side of crispy fries.",
+            "price": 15,
+            "cost_price": 10
+        }
+    },
+    {
+        "type": "add",
+        "data":{
+            "name": "Fried Chicken",
+            "description": "Crispy, golden fried chicken served with a side of creamy coleslaw and homemade biscuits.",
+            "price": 15,
+            "cost_price": 10
+        }
+    },
+    {
+        "type": "add",
+        "data":{
+            "name": "Mac and Cheese",
+            "description": "Creamy, cheesy macaroni topped with a crispy breadcrumb topping. The ultimate comfort food.",
+            "price": 15,
+            "cost_price": 10
+        }
+    },
+    {
+        "type": "add",
+        "data":{
+            "name": "Apple Pie",
+            "description": "A classic apple pie with a flaky crust and a sweet, tangy filling. Served with a scoop of vanilla ice cream.",
+            "price": 15,
+            "cost_price": 10
+        }
+    },
+    {
+        "type": "add",
+        "data":{
+            "name": "House Fries",
+            "description": "Perfectly fried potatoes served with our special seasoning blend. Crispy on the outside, fluffy on the inside.",
+            "price": 15,
+            "cost_price": 10
+        }
+    }
+]
+
+[System->Qin]: Welcome to the Chef Management Module. Now your chef info as below:
+ 
+
+<<FORMAT>>
+You can perform the following actions:
+
+1. Hire a new chef:
+{
+    "type": "add",
+    "data": {
+        "name": <Chef Name>,
+        "salary": <Chef Salary>
+    }
+}
+
+2. Fire a chef:
+{
+    "type": "delete",
+    "id": <Chef ID>
+}
+
+3. Change a chef's salary:
+{
+    "type": "partial_update",
+    "id": <Chef ID>,
+    "data": {
+        "salary": <New Salary>
+    }
+}
+
+You must put forward other ideas or requests, please append to the end of JSON data, like this:
+{
+    "type": "other",
+    "data": "Other ideas or requests"
+}
+
+Your responses must be formatted as follows:
+
+[
+    {
+        "type": <the type shown above>,
+        "data": <corresponding type of data format>
+        If necessary, add "id" or other relevant IDs here
+    },
+    {
+        "type": as above,
+        "data": as above,
+        If necessary, add "id" or other relevant IDs here
+    },
+    ...
+]
+
+If nothing you want to change, return None
+
+Please provide the required JSON data for the specific action you want to take. Do not include any other sentences in your response.
+
+[Qin->Qin]: [
+    {
+        "type": "add",
+        "data":{
+            "name": "Head Chef",
+            "salary": 1500
+        }
+    },
+    {
+        "type": "add",
+        "data":{
+            "name": "Sous Chef",
+            "salary": 1000
+        }
+    }
+]
+
+[System->Qin]: Welcome to the Advertisement Management Module. Now your Advertisement as below:
+<INPUT 0>
+
+<<FORMAT>>
+You can perform the following actions:
+
+1. If these inforamtion have not been set, your response must follow the following format:
+{
+    "type": "add",
+    "data":{
+        "content": <Advertisement Content (up to 100 Words) >,
+    }
+}
+
+2. Update this Advertisement:
+{
+    "type": "update",
+    "id": "1",
+    "data":{
+        "content": <Advertisement Content (up to 100 Words) >,
+    }
+}
+
+Your response must be formated as above.
+
+Please provide the required JSON data for the specific action you want to take. Do not include any other sentences in your response.
+
+[Qin->Qin]: {
+    "type": "add",
+    "data":{
+        "content": "Welcome to American Comfort! Come taste our delicious comfort food classics, made with high-quality ingredients by our expert chefs. Enjoy our cozy atmosphere and friendly service. Grand opening specials available!"
+    }
+}
+

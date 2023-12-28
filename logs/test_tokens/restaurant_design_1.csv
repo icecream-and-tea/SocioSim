@@ -1,10 +1,10 @@
-name,day1
-id,1
-income,0
-expense,133
-num_of_customer,0
-num_of_chef,1
-chef_salary,1000
-dish_score,0.26666666666666666
-customer_score,0.0
-dishes,{}
+name,day1,day2,day3,day4,day5
+id,1,2,3,4,5
+income,0,20,0,24,36
+expense,160,160,160,166,173
+num_of_customer,0,1,0,1,1
+num_of_chef,2,2,2,2,2
+chef_salary,1800,1800,1800,2000,2200
+dish_score,0.3436666666666667,0.3622338792447488,0.36972222222222223,0.4018663968112497,0.4290469003968524
+customer_score,0.0,0.0,0.0,0.0,0.0
+dishes,{},"{""Veggie Delight Burger"": 1, ""Caesar Salad"": 1}",{},"{""Veggie Delight Burger"": 1, ""Caesar Salad"": 1}","{""Veggie Delight Burger"": 1, ""Seasonal Vegetable Pasta"": 1, ""Blueberry Cheesecake"": 1}"

@@ -1,0 +1,9 @@
+After you taste the dishes, The score of each dish as below (1 is a excellent score):
+<INPUT 0>
+
+<<FORMAT>>
+Now please tell me your feeling of this meal. If the experience is not good, please give a negative review. Your responses must be formated as below:
+{
+    "restaurant": <The restaurant you chose>,
+    "feeling": <Your experience, feeling. It is just your personal memory, no one else will see it>
+}

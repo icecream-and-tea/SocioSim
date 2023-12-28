@@ -2,6 +2,7 @@ from SocioSim.simul import Simulation
 
 import os
 import yaml
+import shutil
 import argparse
 
 # parse the argument
@@ -11,8 +12,9 @@ args = parser.parse_args()
 
 # create a log folder
 log_path = f"./logs/{args.name}"
-if not os.path.exists(log_path):
-    os.makedirs(log_path)
+if os.path.exists(log_path):
+    shutil.rmtree(log_path)
+os.makedirs(log_path)
 
 config_path = os.path.join('SocioSim', 'examples', 'restaurant.yaml')
 

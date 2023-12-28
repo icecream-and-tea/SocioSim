@@ -31,19 +31,19 @@ def send_data_to_database(data, endpoint, port, base_url="http://localhost:"):
         if data_type == "add":
             response = requests.post(url, json=res["data"])
             if response.status_code != 201:
-                raise Exception(f"A error occur when adding data to {endpoint}: {response.status_code}")
+                raise Exception(f"A error occur when adding data to {endpoint}: {response.status_code} \n data: {res['data']}")
         elif data_type == "delete":
             response = requests.delete(f"{url}{res['id']}/")
             if response.status_code != 204:
-                raise Exception(f"A error occur when deleting data to {endpoint}: {response.status_code}")
+                raise Exception(f"A error occur when deleting data to {endpoint}: {response.status_code} \n data: {res['data']}")
         elif data_type == "update":
             response = requests.put(f"{url}{res['id']}/", json=res["data"])
             if response.status_code != 200:
-                raise Exception(f"A error occur when updating data to {endpoint}: {response.status_code}")
+                raise Exception(f"A error occur when updating data to {endpoint}: {response.status_code} \n data: {res['data']}")
         elif data_type == "partial_update":
             response = requests.patch(f"{url}{res['id']}/", json=res["data"])
             if response.status_code != 200:
-                raise Exception(f"A error occur when updating data to {endpoint}: {response.status_code}")
+                raise Exception(f"A error occur when updating data to {endpoint}: {response.status_code} \n data: {res['data']}")
         else: 
             raise Exception(f"error: No this type {data_type}")
  
